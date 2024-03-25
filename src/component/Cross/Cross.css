@@ -1,0 +1,18 @@
+.Cross{
+    width: 60px;
+    height: 60px;
+    font-size: 43px;
+    color: #FFF8E8;
+    
+    display: none;
+}
+
+@media  (min-width: 400px) and (max-width : 500px){
+    .Cross{
+        width: 60px;
+        height: 60px;
+        font-size: 45px;
+        color: #FFF8E8;
+        display: block;
+    }
+}

@@ -1,0 +1,10 @@
+.glow{
+    width: 60vw;
+    height: 50vh;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background-color: #3f2f2a;
+    border-radius: 50%; 
+    filter: blur(420px); /* Set the blur amount */
+  }

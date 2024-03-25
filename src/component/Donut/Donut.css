@@ -1,0 +1,77 @@
+.Cookiesboxone{
+    width: 300px;
+    height: 220px;
+    background-color: #522824;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(76, 75, 75, 0.5);
+    transition: all 0.4s ease-in-out;
+}
+.Cookiesboxone:hover{
+    box-shadow: 0px 0px 10px 0px rgba(108, 106, 106, 0.5);
+    transition: all 0.4s ease-in-out;
+    background-color: #522420;
+}
+.Cookiesboxone:hover .cocke{ 
+    transform:scale(1.08);
+    rotate: 20deg;
+    transition: all 0.4s ease-in-out;
+}
+.Cookiesboxone:hover .exp{ 
+    color: rgb(218, 164, 107) !important;
+}
+.Cookiesboxone:hover .expe{ 
+    color: rgb(218, 164, 107) !important;
+}
+.Cookiesboxone:hover .expeee{ 
+    color: rgb(218, 164, 107) !important;
+}
+.cok{
+    width: 300px;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.cocke{
+    width: 270px;
+    height:360px;
+    border-radius: 50%;
+    top: -32%;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+.cocke img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.desc{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.exp{
+    color: #ecc194 !important;
+    font-size: 21px !important;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.expe{
+    font-size: 16px;
+    color: #ecc194;
+    font-weight: 500;
+    line-height: 20px;
+}
+.expee{
+    font-size: 16px;
+    color: #ecc194;
+    font-weight: 500;
+}
+.expeee{
+    font-size: 16px;
+    color: #ecc194;
+    font-weight: 500;
+}

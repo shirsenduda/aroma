@@ -1,0 +1,86 @@
+.Swipertwo {
+    width: 100%;
+    height: 20vh;
+    background-color: #ad724ae9;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    padding:15px 15px ;
+    overflow: hidden;
+}
+
+.brand {
+    width: 100px;
+    height: 80px;
+    padding-top: 20px;
+}
+.Black{
+    width: 100%;
+    height: 100%;
+    color: #F8E4BE;
+    font-size: 3vw;
+    font-family: "Macondo Swash Caps", cursive;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+.coffeeiconi{
+    width: 50px;
+    height: 60px;
+   
+    position: absolute;
+    top: 10%;
+    left: 220px;
+}
+.coffeeiconi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+*/
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .Swipertwo {
+        width: 100%;
+        height: 10vh;
+        background-color: #ad724ae9;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        padding:0px 10px ;
+        margin-top: 10px;
+        
+    }
+    
+    .brand {
+        width: 400px !important;
+        height: 100px;
+        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+        padding-left: 55px;
+        
+    }
+    .Black{
+        font-size: 8vw;
+        font-family: "Macondo Swash Caps", cursive;
+        font-weight: 400;
+        font-style: normal;
+        cursor: pointer;
+        
+    }
+    .coffeeiconi{
+        width: 50px;
+        height: 56px;
+        position: absolute;
+        top: 13.5%;
+        left: 256px;
+    }
+    .coffeeiconi img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

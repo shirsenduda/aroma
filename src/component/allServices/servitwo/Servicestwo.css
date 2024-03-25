@@ -1,0 +1,43 @@
+.Services{
+    width: 160px;
+    height: 185px;
+    background-color: #54372A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0px;
+    transition: all 0.4s ease-in-out;
+}
+.serimg{
+    width: 100px;
+    height: 100px;
+   
+}
+.serimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sertext{
+    width: 100%;
+    height: 20px;
+    color: #F8E4BE;
+    font-family: 'poppins',sans-serif;
+    font-size: 14.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.Services:hover{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px 0px rgba(108, 106, 106, 0.5);
+    
+}
+.Services:hover .sertext{
+    
+    color: #ebd4a9;
+}

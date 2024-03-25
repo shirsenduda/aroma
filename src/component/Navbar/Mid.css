@@ -1,0 +1,100 @@
+.parttwo{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    position: relative;
+    width: 400px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39 37 37 / 40%);
+    border-radius: 20px;
+    margin-left: 60px;
+}
+.parttwo{
+    width: 400px;
+    height: 60px;
+    background-color: aliceblue;
+    display: none;
+}
+.parttwoo{
+    position: relative;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: transparent;
+    padding-top: 1px;
+    padding-left: 14px;
+    margin-left: 60px;
+
+}
+.parttwoo{
+    
+    display: block;
+    position: absolute;
+    
+}
+.searchicon{
+    width: 40px;
+    height: 30px;
+    
+    display: block;
+    position: absolute;
+    top: 31.5%;
+    left: 58px;
+    font-size: 16px;
+    color: rgba(146, 143, 143, 0.5);;
+}
+
+.parttwoo input{
+    width: 280px;
+    height: 45px;
+    padding-left: 30px;
+    border: 2px solid transparent;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    background-color: #24242c;
+    color: #d2d1dc;
+    transition: .3s ease;
+    font-size: 1.1rem;
+    
+    
+    position: relative;
+    left: 50px;
+}
+
+
+
+.parttwo h3{
+    color: #F8E4BE;
+    font-family: 'poppins',sans-serif;
+    font-size: 17px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+.parttwo h3:hover{
+    color: #efe9da;
+    transition: ease-out 0.5s;
+    text-decoration: underline; 
+}
+@media  (min-width: 400px) and (max-width : 500px){
+    .parttwo{
+           display: flex;
+           flex-direction: row;
+           gap: 15px;
+           position: relative;
+           width: 400px;
+           height: 60px;
+           align-items: center;
+           justify-content: center;
+           background-color: rgb(39 37 37 / 50%);
+           border-radius: 20px;
+           display: none;
+       }   
+   }

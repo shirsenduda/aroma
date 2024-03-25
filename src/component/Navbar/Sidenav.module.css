@@ -1,0 +1,87 @@
+.sidenav{
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+    display: none;
+}
+.sidenav partone{
+    position: relative;
+    width: 104px;
+    height: 48px;
+    display: none;
+}
+.sidenav partone img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sidenav partthree{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    display: none;
+}
+
+@media  (min-width: 400px) and (max-width : 500px){
+.sidenav{
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(0%);
+    position: absolute;
+    top: 0%;
+}
+.sidenav partone{
+    position: relative;
+    width: 104px;
+    height: 48px;
+    display: block;
+}
+.sidenav partone img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sidenav partthree{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    display: block;
+}
+
+
+
+
+
+
+
+.sidenavactive{
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0%;
+}
+.sidenavactive partone{
+    position: relative;
+    width: 104px;
+    height: 48px;
+    display: block;
+}
+.sidenavactive partone img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sidenavactive partthree{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    display: block;
+}
+}

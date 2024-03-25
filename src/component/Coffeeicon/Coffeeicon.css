@@ -1,0 +1,11 @@
+.coffeeicon{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    
+}
+.coffeeicon img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}

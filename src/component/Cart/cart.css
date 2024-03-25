@@ -1,0 +1,19 @@
+.cart{
+    color: #FFF8E8;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 0px 6px;
+    transition: ease-out 0.5s;
+}
+.cart:active{
+    transform: scale(0.94);
+    color: #efe9da;
+    transition: ease-out 0.5s;
+}
+@media  (min-width: 400px) and (max-width : 500px){
+    .cart{
+        font-size: 28px;
+       
+    }
+   
+}

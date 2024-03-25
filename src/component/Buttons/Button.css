@@ -1,0 +1,39 @@
+.button{
+    position: relative;
+    display: inline-block;
+    padding: 8px 13.3px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #F8E4BE;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #F8E4BE;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #F8E4BE;
+    align-items:flex-start;
+    
+  }
+
+  .button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #E0A8724D;
+  }
+  
+  .button:active {
+    transform: scale(0.9);
+  }
+
+  /* Small screen  */
+  @media  (min-width: 400px) and (max-width :500px) {
+    .button{
+      font-size: 16px;
+
+    }
+    
+  }
+
+ 

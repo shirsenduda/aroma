@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #270c03;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  border-radius:20px ;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #221518;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+

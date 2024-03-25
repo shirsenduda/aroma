@@ -1,0 +1,18 @@
+.search{
+    color: #FFF8E8;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 0px 6px;
+    transition: ease-out 0.5s;
+}
+.search:active{
+    transform: scale(0.94);
+    color: #ded7c7;
+    transition: ease-out 0.5s;
+}
+
+@media  (min-width: 400px) and (max-width : 500px){
+    .search{
+        font-size: 29px;
+    }
+}

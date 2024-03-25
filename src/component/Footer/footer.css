@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Mochiy+Pop+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Dancing+Script:wght@400..700&display=swap');
+
+
+.footerbody {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  top: 2rem;
+  margin-left: 0px;
+  background-color: #533529;
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+
+
+}
+
+.footerbody img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+}
+
+.copyright {
+  font-family: 'Macondo Swash Caps', cursive;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 9px;
+  font-weight: 100;
+  color: #fff3e0;
+  display: flex;
+  justify-content: center;
+  margin-top: 255px;
+  letter-spacing: 1.5px;
+  transform: translate(420px);
+  width: 340px;
+}
+
+.creator {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+  font-size: 8px;
+  font-weight: 100;
+  color: #fff3e0;
+  display: flex;
+  justify-content: center;
+  top: 240px;
+  letter-spacing: 1.5px;
+  transform: translate(440px);
+}
+
+.row1 {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px;
+}
+
+.logofooterone {
+  width: 200px;
+  height: 60px;
+}
+
+.btt {
+  background-color: transparent;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: 1200;
+  font-style: normal;
+  color: #FFF8E8;
+  filter: brightness(90%);
+  margin-bottom: 10px;
+}
+
+.h22 {
+  font-family: 'poppins', sans-serif;
+  font-size: 18px;
+  width: 310px;
+  height: 100px;
+  color: #FFF8E8;
+  font-weight: 100;
+  line-height: 23.5px;
+}
+
+.buttonn {
+  position: relative;
+  display: inline-block;
+  padding: 5.5px;
+  text-align: center;
+  width: 95px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #F8E4BE;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #F8E4BE;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #F8E4BE;
+  align-items: flex-start;
+  transform: translateY(-30%);
+
+}
+
+.buttonn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #E0A8724D;
+}
+
+.buttonn:active {
+  transform: scale(0.95);
+}
+
+.logofootertwo {
+  width: 230px;
+  height: 230px;
+  left: 105%;
+  position: absolute;
+  top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.logofooterthree {
+  width: 230px;
+  height: 230px;
+  left: 165%;
+  position: absolute;
+  top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.logofooterfour {
+  width: 230px;
+  height: 230px;
+  left: 225%;
+  position: absolute;
+  top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.xx {
+  font-family: 'poppins', sans-serif;
+  font-size: 22px;
+}
+
+.onee {
+  font-family: 'poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF8E8;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: black;
+  font-size: 15px;
+  border: 1px solid #5e4dcd;
+  border-radius: 6px 0 0 6px;
+  transform: translate(-10%);
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #E0A872;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transform: translateY(-100%);
+  margin-left: 130px;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #d68f4d;
+}
+
+.input:focus,
+.input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+
+.email {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small screen  */
+@media (min-width: 400px) and (max-width :500px) {
+  .footerbody {
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    top: 2rem;
+    margin-left: 0px;
+    background-color: #533529;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+
+
+  }
+
+  .logofootertwo {
+    width: 230px;
+    height: 230px;
+    left: -2%;
+    position: absolute;
+    top: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .logofooterthree {
+    width: 230px;
+    height: 230px;
+    left: 42%;
+    position: absolute;
+    top: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logofooterfour {
+    width: 230px;
+    height: 230px;
+    left: -2%;
+    position: absolute;
+    top: 162%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .copyright {
+    font-family: 'Macondo Swash Caps', cursive;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 9px;
+    font-weight: 100;
+    color: #fff3e0;
+    display: flex;
+    justify-content: center;
+    margin-top: 659px;
+    letter-spacing: 1.5px;
+    transform: translate(-6%);
+    width: 340px;
+  }
+  .creator {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 9px;
+    font-weight: 100;
+    color: #fff3e0;
+    display: flex;
+    justify-content: center;
+    top: 650px;
+    letter-spacing: 1.5px;
+    left: -145%;
+  }
+  .email {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    left: 25%;
+  }
+  
+}
