@@ -16,6 +16,8 @@ import Pagefive from "./component/allpages/Page5/Pagefive";
 import Pagesix from "./component/allpages/Page6/Pagesix";
 import Footer from "./component/Footer/Footer";
 import Pageseven from "./component/allpages/Page7/Pageseven";
+// import router from "./Routers/Rotes/Routes";
+// import { RouterProvider } from "react-router-dom";
 
 const App = () => {
   const [ramu, setramu] = useState("hi");
@@ -185,6 +187,7 @@ const App = () => {
         <Pagesix />
         <Pageseven/>
         <Footer />
+        {/* <RouterProvider router={router} /> */}
       </div>
     </>
   );
