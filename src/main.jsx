@@ -11,11 +11,11 @@ import About from "./Pages/About";
 import Menu from './Pages/Menu'
 const Layout = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Outlet />
       <Footer />
-    </div>
+    </>
   );
 };
 

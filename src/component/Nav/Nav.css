@@ -47,7 +47,7 @@
   transition: ease-out 0.5s;
   
 }
-.item .Li:hover {
+.item:hover {
   color: #eae7e1;
   transition: ease-out 0.5s;
   transform: scale(1.04);

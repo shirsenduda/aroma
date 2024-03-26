@@ -13,12 +13,7 @@ import Pagethree from "./component/allpages/Page3/Pagethree";
 import PageFour from "./component/allpages/Page4/Pagefour";
 import Pagefive from "./component/allpages/Page5/Pagefive";
 import Pagesix from "./component/allpages/Page6/Pagesix";
-
 import Pageseven from "./component/allpages/Page7/Pageseven";
-//  import { BrowserRouter, Route, Routes } from "react-router-dom";
-//  import Secondpage from "./Secondpage/App"
-// import router from "./Routers/Rotes/Routes";
-// import { RouterProvider } from "react-router-dom";
 
 const App = () => {
   const [ramu, setramu] = useState("hi");
@@ -180,12 +175,6 @@ const App = () => {
   return (
     <>
       <div className={Appcss.main} ref={container}>
-        {/* <BrowserRouter>
-        <Pagefive />
-        <Routes>
-          <Route path="/" element={}/>
-        </Routes>
-        </BrowserRouter> */}
         <Pageonee />
         <PageFour />
         <Pagethree />
@@ -193,7 +182,6 @@ const App = () => {
         <Pagefive />
         <Pagesix />
         <Pageseven />
-        
       </div>
     </>
   );
