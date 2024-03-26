@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import Appcss from "./App.module.css";
 import "remixicon/fonts/remixicon.css";
 import LocomotiveScroll from "locomotive-scroll";
@@ -18,6 +18,7 @@ import Footer from "./component/Footer/Footer";
 import Pageseven from "./component/allpages/Page7/Pageseven";
 
 const App = () => {
+  const [ramu, setramu] = useState("hi");
   const locomotiveScroll = new LocomotiveScroll();
   const container = useRef();
   gsap.registerPlugin(ScrollTrigger);
