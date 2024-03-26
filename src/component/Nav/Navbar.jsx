@@ -8,6 +8,7 @@ import Cart from '../Cart/Cart'
 import Button from '../Buttons/Button'
 import "./Nav.css";
 import './sidenav.css'
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [bt, setbt] = useState("Login");
   const [btt, setbtt] = useState("Sign-Up");
@@ -26,8 +27,9 @@ const Navbar = () => {
         <div className="parttwonav">
         <h3 className="item">Home</h3>
         <h3 className="item">Service</h3>
-        <h3 className="item">Menu</h3>
-        <h3 className="item">About</h3>
+        <h3 className="item"><Link to={"/menu"} className="Li"> Menu  </Link></h3>
+        <h3 className="item"><Link to={"/about"} className="Li"> About  </Link></h3>
+       
         </div>
         <div className="partthreenav">
         <Search/>

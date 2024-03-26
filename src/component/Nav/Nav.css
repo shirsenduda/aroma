@@ -47,11 +47,15 @@
   transition: ease-out 0.5s;
   
 }
-.item:hover {
+.item .Li:hover {
   color: #eae7e1;
   transition: ease-out 0.5s;
   transform: scale(1.04);
   text-decoration: underline;
+}
+.Li{
+  color: #f8e4be;
+  text-decoration: none ;
 }
 
 @media (min-width: 400px) and (max-width: 500px) {

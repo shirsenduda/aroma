@@ -7,15 +7,16 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import Pageonee from "./component/allpages/Page1/Pageone";
 import Pagetwoo from "./component/allpages/Page2/Pagetwo";
 import Pagethree from "./component/allpages/Page3/Pagethree";
 import PageFour from "./component/allpages/Page4/Pagefour";
 import Pagefive from "./component/allpages/Page5/Pagefive";
 import Pagesix from "./component/allpages/Page6/Pagesix";
-import Footer from "./component/Footer/Footer";
+
 import Pageseven from "./component/allpages/Page7/Pageseven";
+//  import { BrowserRouter, Route, Routes } from "react-router-dom";
+//  import Secondpage from "./Secondpage/App"
 // import router from "./Routers/Rotes/Routes";
 // import { RouterProvider } from "react-router-dom";
 
@@ -174,20 +175,25 @@ const App = () => {
     };
 
     // call animaton function
-       animation();
+    animation();
   });
   return (
     <>
       <div className={Appcss.main} ref={container}>
+        {/* <BrowserRouter>
+        <Pagefive />
+        <Routes>
+          <Route path="/" element={}/>
+        </Routes>
+        </BrowserRouter> */}
         <Pageonee />
         <PageFour />
         <Pagethree />
         <Pagetwoo />
         <Pagefive />
         <Pagesix />
-        <Pageseven/>
-        <Footer />
-        {/* <RouterProvider router={router} /> */}
+        <Pageseven />
+        
       </div>
     </>
   );

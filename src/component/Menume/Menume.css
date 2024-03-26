@@ -1,0 +1,8 @@
+.Menume{
+    width: 100%;
+    height: 100vh;
+    color: rgb(40, 78, 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
