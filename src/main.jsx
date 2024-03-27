@@ -8,7 +8,8 @@ import Navbar from "./component/Nav/Navbar";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Footer from "./component/Footer/Footer";
 import About from "./Pages/About";
-import Menu from './Pages/Menu'
+import Menu from "./Pages/Menu";
+import Login from "./Pages/Login";
 const Layout = () => {
   return (
     <>
@@ -36,11 +37,16 @@ const router = createBrowserRouter([
         path: "/Menu",
         element: <Menu />,
       },
+      {
+        path: "/Login",
+        element: <Login /> ,
+      },
+      
       
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router}/>
+  <RouterProvider router={router} />
 );

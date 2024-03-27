@@ -5,7 +5,7 @@ import Aboutme from "../component/Aboutme/Aboutme";
 const About = () => {
   return (
     <>
-      <div className="Aboutcss">
+      <div>
         <Aboutme />
       </div>
     </>

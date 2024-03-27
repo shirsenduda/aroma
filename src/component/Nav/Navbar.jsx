@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 "use client";
 import React, { useState } from "react";
@@ -34,10 +35,13 @@ const Navbar = () => {
         <div className="partthreenav">
         <Search/>
         <Cart/>
+        <Link to={'/Login'}>
         <Button bttt={bt}/>
+        </Link>
         </div>
         
       </div>
+      {/* Side Na */}
       <div className={ Slide=== true ? "sidenav" : "sidenavtwo"}>
         <div className="partoneside">
         <Cross togle={togglefunction} />

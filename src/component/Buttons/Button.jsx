@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './Button.css'
-const Button = ({bt,bttt,btn}) => {
+const Button = ({bt,bttt,btn,btttt}) => {
   return (
     <>
-    <button className="button" id="buttonid">{bt}{bttt}{btn}</button>
+    <button className="button" id="buttonid">{bt}{bttt}{btn}{btttt}</button>
     </>
   )
 }

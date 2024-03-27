@@ -4,7 +4,7 @@ import Menume from "../component/Menume/Menume";
 const About = () => {
   return (
     <>
-      <div className="Aboutcss">
+      <div>
         <Menume />
       </div>
     </>
