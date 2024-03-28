@@ -93,9 +93,12 @@ const Pageone = () => {
               <div className="parttwosecondone">
                 <i className="ri-instagram-line"></i>
               </div>
+              <a href="https://github.com/shirsenduda/aroma" className="aa">
               <div className="parttwosecondtwo">
               <i className="ri-github-fill"></i>
               </div>
+              </a>
+              
               <div className="parttwosecondthree">
                 <i className="ri-discord-fill"></i>
               </div>

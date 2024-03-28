@@ -1,0 +1,25 @@
+.mainmenuuu {
+    position: relative;
+    margin-top: 8%;
+    overflow: hidden;
+}
+
+.secondmenuu {
+    width: 100%;
+    height: 80vh;
+
+
+}
+.ourmen{
+    position: relative;
+    
+    top: -16px;
+}
+.secondmenuuu {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #F8E4BE;
+}

@@ -1,0 +1,49 @@
+.Ourmenu{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.ourmenupartone{
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ourmenuparttw{
+    width: 40%;
+    height: 100%;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    
+    border-radius: 50%;
+}
+.ourmenuparttw img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ourmenupartthr{
+    width: 30%;
+    height: 100%;
+}
+.ourmenupartfr{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(99, 98, 96);
+    display: none;
+}
+.ourmenupartt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}

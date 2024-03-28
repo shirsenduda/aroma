@@ -167,6 +167,18 @@ const App = () => {
           trigger: ".Testimonial,.Testimonialparttwo,.Testimonialmain",
         },
       });
+      gsap.from(".Menume", {
+        y: 10,
+        duration: 1, // seconds
+        delay: 0.5,
+        opacity: 0,
+        stagger: 0.3,
+        z: -300,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".Menume",
+        },
+      });
     };
 
     // call animaton function
