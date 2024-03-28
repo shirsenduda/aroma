@@ -11,7 +11,7 @@ import About from "./Pages/About";
 import Menu from "./Pages/Menu";
 import Login from "./Pages/Login";
 
-// React router code 
+// React router code
 // 🙂 Hope you Undestand this lines of code
 const Layout = () => {
   return (
@@ -42,10 +42,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/Login",
-        element: <Login /> ,
+        element: <Login />,
       },
-      
-      
     ],
   },
 ]);
