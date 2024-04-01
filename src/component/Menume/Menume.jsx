@@ -25,8 +25,6 @@ const Aboutme = () => {
       <div className="Menume">
         <div className="firstboxmenu">
           <img src="/img/menu.jpg" alt="" />
-        </div>
-        <div className="firstboxmenutwo">
           <div className="topparttext">
             <h1 className="Headfood">
               DIGITAL <br /> EXPERIENCE
@@ -43,14 +41,11 @@ const Aboutme = () => {
               <div className="partlast">
                 <button className="buttonthr">
                   <div className="circleth">
-                    <img
-                      src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    />
+                  <i className="ri-drinks-fill"></i>
                   </div>
                   Lorem ipsum dolor sit amet.
                   <div className="circleth">
-                    <i className="ri-headphone-line"></i>
+                  <i className="ri-arrow-right-up-line"></i>
                   </div>
                 </button>
               </div>
@@ -62,7 +57,7 @@ const Aboutme = () => {
             </div>
             <div className="bottompartmenutw">
               <div className="partmenuon">
-              <Coffeeicon/>
+                <Coffeeicon />
                 <h1 className="prem">Premium Blen Coffee</h1>
                 <p className="premm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -81,15 +76,17 @@ const Aboutme = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsa, beatae.
                   </p>
-                  
                 </div>
               </div>
             </div>
           </div>
+        
         </div>
+        
       </div>
     </>
   );
 };
 
 export default Aboutme;
+

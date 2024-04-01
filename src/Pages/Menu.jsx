@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./mainmenuu.css";
 import Ourmenume from "../component/Ourmenume/Ourmenume";
 import Coffeeicon from "../component/Coffeeicon/Coffeeicon";
+import Productitem from "../component/Fooditems/Fooditem";
 const About = () => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
@@ -23,7 +24,7 @@ const About = () => {
     const tllll = gsap.timeline();
     const tlllll = gsap.timeline();
 
-    // animation Part:-
+    // 🤓animation Part:-
     const animation = () => {
       tl.from(
         ".burger,.partonenav,.parttwonav,.partthreenav",
@@ -94,13 +95,26 @@ const About = () => {
         opacity: 0,
         stagger: 0.3,
         z: -300,
-        scale:0.5,
+        scale: 0.5,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: ".ourmen,.ourmenuparttw,.xyzz",
         },
       });
-      
+      gsap.from(".Swiperthreeee", {
+        y: 10,
+        duration: 1, // seconds
+        delay: 0.5,
+        opacity: 0,
+        stagger: 0.3,
+        z: -300,
+
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".Swiperthreeee",
+          ease: "power1.inOut",
+        },
+      });
     };
     animation();
   });
@@ -110,10 +124,11 @@ const About = () => {
         <Menume />
         <div className="secondmenuu">
           <div className="secondmenuuu">
-            <h1 className="ourmen">Our Menu</h1> 
+            <h1 className="ourmen">Our Menu</h1>
           </div>
           <Ourmenume />
         </div>
+        <div className="thirdmenuu"></div>
       </div>
     </>
   );

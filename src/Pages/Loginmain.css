@@ -1,0 +1,30 @@
+.Logincs {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.logincstw {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.slid{
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    align-items: center;
+}
+.blogs{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}

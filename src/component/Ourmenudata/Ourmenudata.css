@@ -55,3 +55,60 @@
     background-color: #644121;
     rotate: 320deg;
 }
+@media (min-width: 400px) and (max-width : 500px) {
+    .Ourmenudata {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #F8E4BE;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .Ourmenudata h3 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #F8E4BE;
+        font-size: 30px;
+    }
+    .Ourmenudata h5 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #F8E4BE;
+        font-size: 18px;
+    }
+    .xyzz{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .linex{
+        width: 60%;
+        height: 3px;
+        background-color: #644121;
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .boxline{
+        width: 10px;
+        height: 10px;
+        background-color: #644121;
+        rotate: 320deg;
+    }
+}

@@ -1,0 +1,26 @@
+.aboutbox{
+    width: 200px;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items:end;
+    flex-direction: column;
+    position: relative;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(90%);
+}
+.lo{
+    position: absolute !important;
+    font-family: 'poppins',sans-serif !important;
+    color: #e4e4d5 !important;
+    font-size: 1.3vw;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}

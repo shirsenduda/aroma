@@ -6,8 +6,14 @@ const Blendcompo = ({blenddata}) => {
   return (
     <>
       <div className="partoneho">
-        <img src={blenddata.imgblend} alt="" />
+        
+       
+        <div className="partonehot">
+        <i className="ri-cup-line"></i>
+        </div>
+        <div className="partonehott">
         <h3 className="blend">{blenddata.nameblend}</h3>
+        </div>
       </div>
     </>
   );
