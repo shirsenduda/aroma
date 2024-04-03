@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react"; //Comes form node Modules
 import ReactDOM from "react-dom/client"; //Comes form node Modules
-import App from "../../aroma/src/App";
+import App from "../src/App";
 import "./index.css";
 import Navbar from "./component/Nav/Navbar";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";

@@ -16,7 +16,7 @@ const Swiperr = () => {
     {
       profileimage:"https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       Names:"Jenny Roy",
-      start: "/public/img/start.svg",
+      start: "/img/start.svg",
       des: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus mollitia eveniet ",
 
     },
@@ -68,16 +68,16 @@ const Swiperr = () => {
         <div className="parttwotesti">Jenny Roy</div>
         <div className="partthreetesti">
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
         </div>
         <div className="partfourtesti">
@@ -112,13 +112,13 @@ const Swiperr = () => {
         <div className="parttwotesti">Harry Khan</div>
         <div className="partthreetesti">
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           
         </div>
@@ -152,16 +152,16 @@ const Swiperr = () => {
         <div className="parttwotesti">Tailor Sheeran</div>
         <div className="partthreetesti">
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           
         </div>
@@ -195,19 +195,19 @@ const Swiperr = () => {
         <div className="parttwotesti">Lisa Sharma</div>
         <div className="partthreetesti">
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           <div className="starstesti">
-            <img src="/public/img/start.svg"  alt="" />
+            <img src="/img/start.svg"  alt="" />
           </div>
           
         </div>
