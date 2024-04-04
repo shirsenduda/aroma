@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/aroma/",
         element: <App />,
       },
       {
