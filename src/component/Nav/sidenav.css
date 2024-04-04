@@ -14,7 +14,7 @@
   color: aliceblue;
   display: none;
 }
-@media (min-width: 400px) and (max-width: 500px) {
+@media  (max-width: 500px) {
     .sidenav {
         width: 100%;
         height: 100vh;
@@ -62,9 +62,9 @@
         margin-bottom: 42px;
       }
       .partonenavside{
-        width: 112px;
-        height: 52px;
-        transform: translateY(8%);
+        width: 100px;
+        height: 45px;
+        transform: translateX(-2%);
       }
       .partonenavside img{
         width: 100%;

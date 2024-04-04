@@ -78,3 +78,23 @@
     transform: translate(50%);
   }
 }
+@media (min-width: 300px) and (max-width: 400px) {
+  .partonenav {
+    width: 148px;
+    height: 42px;
+    display: flex;
+    transform: translate(52%) !important;
+    margin-top: 10px;
+    
+  }
+  .parttwonav {
+    display: none;
+  }
+  .partthreenav {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(50%) !important;
+  }
+}

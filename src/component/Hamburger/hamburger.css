@@ -8,7 +8,7 @@
   
 }
 
-@media  (min-width: 400px) and (max-width : 500px){
+@media  (max-width : 500px){
 .burger{
     background-color: transparent;
     position: relative;
