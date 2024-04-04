@@ -61,3 +61,37 @@
         justify-content: space-between;
     }
 }
+@media (min-width: 300px) and (max-width: 400px) {
+    .page4{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        padding: 26px 24px;
+        justify-content: space-between;
+        position: relative;
+        top: 20px;
+        
+    }
+    .partonedi{
+        width: 320px !important;
+        height: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .partonedii{
+        width: 320px !important;
+        height: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .partonediii{
+        width: 320px !important;
+        height: 100% !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -17,6 +17,15 @@
         padding-top: 0.1%;
     }
 }
+@media (min-width: 300px) and (max-width: 400px) {
+    .Pageone{
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 0.1%;
+        padding-right: 1%;
+        padding-top: 0.1%;
+    }
+}
 
 
 
