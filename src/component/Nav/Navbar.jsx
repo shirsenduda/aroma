@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="partoneside">
         <Cross togle={togglefunction} />
         <div className="partonenavside">
-        <img src="/img/logtw.svg" alt="" />
+        <img src="./img/logtw.svg" alt="" />
         </div>
         <Search/>
         </div>
