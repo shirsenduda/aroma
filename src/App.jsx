@@ -182,7 +182,7 @@ const App = () => {
     };
 
     // call animaton function
-    //animation();
+    animation();
   });
   return (
     <>
