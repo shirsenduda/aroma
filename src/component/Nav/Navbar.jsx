@@ -26,7 +26,7 @@ const Navbar = () => {
         <img src="/img/jj.svg" alt="" />
         </div>
         <div className="parttwonav">
-        <h3 className="item"> <Link to={"/"} className="Li">Home</Link></h3>
+        <h3 className="item"> <Link to={"/aroma/"} className="Li">Home</Link></h3>
         <h3 className="item">Service</h3>
         <h3 className="item"><Link to={"/menu"} className="Li"> Menu  </Link></h3>
         <h3 className="item"><Link to={"/about"} className="Li"> About  </Link></h3>

@@ -25,7 +25,7 @@ const Layout = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/aroma/",
     element: <Layout />,
     children: [
       {
