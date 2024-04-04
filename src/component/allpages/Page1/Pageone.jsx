@@ -14,7 +14,7 @@ const Pageone = () => {
     <>
       <div className="Pageone">
         <div className="secondpart">
-          <img src="/img/Group 21.png" alt="" />
+          <img src="./img/Group 21.png" alt="" />
           <Nav />
           <div className="partone">
             <Coffeeicon />

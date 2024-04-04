@@ -10,7 +10,7 @@ const Donut = () => {
       <div className="Cookiesboxone">
           <div className="cok">
             <span className="cockeee">
-            <img src="/img/xxx.png" alt="" />
+            <img src="./img/xxx.png" alt="" />
             </span>
           </div>
           <div className="desc">

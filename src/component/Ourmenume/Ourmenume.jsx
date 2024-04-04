@@ -35,7 +35,7 @@ const Ourmenume = () => {
           </div>
         </div>
         <div className="ourmenuparttw">
-          <img src="/img/Ourmenuu.svg" alt="" />
+          <img src="./img/Ourmenuu.svg" alt="" />
         </div>
         <div className="ourmenupartthr">
           <div className="ourmenupartt">

@@ -7,7 +7,7 @@ const Coffeeicon = () => {
   return (
     <>
       <div className="coffeeicon">
-        <img src="/img/6.png" alt="" />
+        <img src="./img/6.png" alt="" />
       </div>
     </>
   );

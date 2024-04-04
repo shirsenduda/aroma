@@ -11,7 +11,7 @@ const Pageseven = () => {
           <h1>Testimonials</h1>
         </div>
         <div className="Testimonialparttwo">
-          <img src="/img/Testimonial.svg" alt="" />
+          <img src="./img/Testimonial.svg" alt="" />
           <Testimonials/>
         </div>
     </div>

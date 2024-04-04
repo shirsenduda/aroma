@@ -48,23 +48,23 @@ const Pageone = () => {
       
       <SwiperSlide className="brand">
         <h1 className='Black'>Black Coffee</h1>
-        <div className="coffeeiconi"><img src="/img/coffeeicon.svg" alt="" /></div>
+        <div className="coffeeiconi"><img src="./img/coffeeicon.svg" alt="" /></div>
       </SwiperSlide>
       <SwiperSlide className="brand">
         <h1 className='Black'> Milk Coffee</h1>
-        <div className="coffeeiconi"><img src="/img/coffeeicon.svg" alt="" /></div>
+        <div className="coffeeiconi"><img src="./img/coffeeicon.svg" alt="" /></div>
       </SwiperSlide>
       <SwiperSlide className="brand">
         <h1 className='Black'>Macha coffee</h1>
-        <div className="coffeeiconi"><img src="/img/coffeeicon.svg" alt="" /></div>
+        <div className="coffeeiconi"><img src="./img/coffeeicon.svg" alt="" /></div>
       </SwiperSlide>
       <SwiperSlide className="brand">
         <h1 className='Black'>Cold Coffee</h1>
-        <div className="coffeeiconi"><img src="/img/coffeeicon.svg" alt="" /></div>
+        <div className="coffeeiconi"><img src="./img/coffeeicon.svg" alt="" /></div>
       </SwiperSlide>
       <SwiperSlide className="brand">
         <h1 className='Black'>Latte coffee</h1>
-        <div className="coffeeiconi"><img src="/img/coffeeicon.svg" alt="" /></div>
+        <div className="coffeeiconi"><img src="./img/coffeeicon.svg" alt="" /></div>
       </SwiperSlide>
       
       

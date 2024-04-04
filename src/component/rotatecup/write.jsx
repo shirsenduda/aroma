@@ -8,7 +8,7 @@ const write = () => {
   return (
     <>
       <div className="write" >
-        <img src="/img/coffee2-nBtrVATQ.png" alt="" />
+        <img src="./img/coffee2-nBtrVATQ.png" alt="" />
       </div>
     </>
   );

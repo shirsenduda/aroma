@@ -24,7 +24,7 @@ const Aboutme = () => {
     <>
       <div className="Menume">
         <div className="firstboxmenu">
-          <img src="/img/menu.jpg" alt="" />
+          <img src="./img/menu.jpg" alt="" />
           <div className="topparttext">
             <h1 className="Headfood">
               DIGITAL <br /> EXPERIENCE
@@ -53,7 +53,7 @@ const Aboutme = () => {
           </div>
           <div className="bottomparttext">
             <div className="bottompartmenu">
-              <img src="/img/coffee-white-SjY7b5HH.png" alt="" />
+              <img src="./img/coffee-white-SjY7b5HH.png" alt="" />
             </div>
             <div className="bottompartmenutw">
               <div className="partmenuon">

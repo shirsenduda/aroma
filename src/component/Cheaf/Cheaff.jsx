@@ -29,7 +29,7 @@ const Swiperr = () => {
       <SwiperSlide className="cheafone">
         <div className="card">
           <div className="imgg">
-            <img src="/img/avatar-1.png" alt="" />
+            <img src="./img/avatar-1.png" alt="" />
           </div>
           <span>Joe Linta</span>
           <p className="info">
@@ -94,7 +94,7 @@ const Swiperr = () => {
       <SwiperSlide className="cheafone">
         <div className="card">
           <div className="imgg">
-            <img src="/img/avatar-2.png" alt="" />
+            <img src="./img/avatar-2.png" alt="" />
           </div>
           <span>Harry Khan</span>
           <p className="info">
@@ -159,7 +159,7 @@ const Swiperr = () => {
       <SwiperSlide className="cheafone">
         <div className="card">
           <div className="imgg">
-            <img src="/img/avatar-3.png" alt="" />
+            <img src="./img/avatar-3.png" alt="" />
           </div>
           <span>Jenny Roy</span>
           <p className="info">
@@ -224,7 +224,7 @@ const Swiperr = () => {
       <SwiperSlide className="cheafone">
         <div className="card">
           <div className="imgg">
-            <img src="/img/avatar-4.png" alt="" />
+            <img src="./img/avatar-4.png" alt="" />
           </div>
           <span>Rita Sins</span>
           <p className="info">
