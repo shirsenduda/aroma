@@ -25,8 +25,9 @@ const Pageone = () => {
         breakpoints={{
           0: {
             slidesPerView:1,
-            spaceBetween:30
+            spaceBetween:10
           },
+          
           480: {
             slidesPerView:1,
             spaceBetween:10
