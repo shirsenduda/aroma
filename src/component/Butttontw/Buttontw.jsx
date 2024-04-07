@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './Buttontw.css'
-const Buttontw = ({getstart}) => {
+const Buttontw = ({getstart,login,sign}) => {
   return (
     <>
-    <button className="getstart">{getstart}</button>
+    <button className="getstart">{getstart}{login}{sign}</button>
     </>
   )
 }

@@ -7,17 +7,20 @@
   padding: 0px 30px;
   position: absolute;
   top: 0%;
- 
+
 }
+
 .partonenav {
   width: 120px;
   height: 55px;
 }
+
 .partonenav img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .parttwonav {
   display: flex;
   flex-direction: row;
@@ -31,6 +34,7 @@
   border-radius: 16px;
   margin-left: 170px;
 }
+
 .partthreenav {
   width: 300px;
   display: flex;
@@ -38,6 +42,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .item {
   color: #f8e4be;
   font-family: "poppins", sans-serif;
@@ -45,56 +50,61 @@
   font-weight: 550;
   cursor: pointer;
   transition: ease-out 0.5s;
-  
+
 }
+
 .item:hover {
   color: #eae7e1;
   transition: ease-out 0.5s;
   transform: scale(1.04);
   text-decoration: underline;
 }
-.Li{
+
+.Li {
   color: #f8e4be;
-  text-decoration: none ;
+  text-decoration: none;
 }
 
 @media (min-width: 400px) and (max-width: 500px) {
   .partonenav {
-    width: 165px;
-    height: 52px;
-    display: flex;
-    transform: translate(48%);
+    width: 100px;
+    height: 45px;
+    transform: translateX(10%) !important;
     margin-top: 10px;
-    
   }
+
   .parttwonav {
     display: none;
   }
+
   .partthreenav {
-    width: 300px;
+    width: 160px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transform: translate(50%);
+    transform: translate(18%) !important;
   }
+
 }
 @media (min-width: 300px) and (max-width: 400px) {
   .partonenav {
-    width: 148px;
-    height: 42px;
-    display: flex;
-    transform: translate(52%) !important;
+    width: 100px;
+    height: 45px;
+    transform: translateX(10%) !important;
     margin-top: 10px;
-    
   }
+
   .parttwonav {
     display: none;
   }
+
   .partthreenav {
-    width: 300px;
+    width: 140px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transform: translate(50%) !important;
+    transform: translate(23%) !important;
   }
+
 }
+

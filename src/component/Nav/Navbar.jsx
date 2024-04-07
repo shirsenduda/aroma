@@ -10,6 +10,7 @@ import Button from '../Buttons/Button'
 import "./Nav.css";
 import './sidenav.css'
 import { Link } from "react-router-dom";
+import Buttontw from "../Butttontw/Buttontw";
 const Navbar = () => {
   const [bt, setbt] = useState("Login");
   const [btt, setbtt] = useState("Sign-Up");
@@ -49,6 +50,7 @@ const Navbar = () => {
         <img src="./img/logtw.svg" alt="" />
         </div>
         <Search/>
+        <Cart/>
         </div>
 
         <div className="parttwonavside"></div>
@@ -59,8 +61,8 @@ const Navbar = () => {
         <h3 className="itemm">About</h3>
         </div>
         <div className="bttstore">
-          <Button bt={bt}/>
-          <Button bttt={btt}/>
+          <Buttontw login="Login"/>
+          <Buttontw sign="Sign-up"/>
           </div>
       
       </div>

@@ -4,7 +4,7 @@ import './cart.css'
 const Search = () => {
   return (
     <>
-    <div className="cart">
+    <div className="cart" id='carti'>
     <button data-quantity="0" className="btn-cart">
           <svg className="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
             
