@@ -50,7 +50,7 @@ const Navbar = () => {
         <img src="./img/logtw.svg" alt="" />
         </div>
         <Search/>
-        <Cart/>
+        
         </div>
 
         <div className="parttwonavside"></div>
