@@ -120,7 +120,7 @@
     display: none;
   }
 
-  .partthreenav {
+  .partthreenav { 
     width: 140px;
     display: flex;
     justify-content: space-around;

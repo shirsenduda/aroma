@@ -23,6 +23,20 @@ const Swiperr = () => {
         delay: 2500,
         disableOnInteraction: false,
       }}
+      breakpoints={{
+        0: {
+          slidesPerView:1,
+          spaceBetween:20
+        },
+        480: {
+          slidesPerView:1,
+          spaceBetween:10
+        },
+      1020: {
+          slidesPerView:3,
+          spaceBetween:25
+        },
+      }}
       className="cheafpa"
     >
       

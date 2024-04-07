@@ -30,7 +30,7 @@
     height: 80vh;
     border-radius: 20px;
     position: absolute;
-    
+
     z-index: 99;
     display: flex;
     justify-content: center;
@@ -149,7 +149,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
 .bottompartmenutw {
@@ -279,7 +279,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .circleth img {
@@ -288,10 +288,10 @@
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    
+
 }
 
-@media  (min-width: 400px) and (max-width : 500px){
+@media (min-width: 400px) and (max-width : 500px) {
     .Menume {
         width: 100%;
         height: 90vh;
@@ -300,13 +300,13 @@
         justify-content: center;
         overflow: hidden;
     }
-    
+
     .firstboxmenu {
         width: 97%;
         height: 80vh;
         border-radius: 20px;
     }
-    
+
     .firstboxmenu img {
         object-fit: cover;
         height: 100%;
@@ -316,19 +316,19 @@
         object-position: center;
         filter: brightness(79%);
     }
-    
+
     .firstboxmenutwo {
         width: 97%;
         height: 80vh;
         border-radius: 20px;
         position: absolute;
-        
+
         z-index: 99;
         display: flex;
         justify-content: center;
         justify-content: space-between;
     }
-    
+
     .topparttext {
         width: 30vw;
         height: 80vh;
@@ -342,7 +342,7 @@
         top: 0%;
         display: none;
     }
-    
+
     .Headfood {
         font-family: 'poppins', sans-serif;
         font-size: 3vw;
@@ -350,7 +350,7 @@
         font-weight: 400;
         z-index: 99;
     }
-    
+
     .Headfoodtw {
         font-family: 'poppins', sans-serif;
         font-size: 12px;
@@ -363,7 +363,7 @@
         display: flex;
         justify-content: space-around;
     }
-    
+
     .Headfoodthr {
         font-family: 'poppins', sans-serif;
         font-size: 12px;
@@ -376,7 +376,7 @@
         align-items: center;
         padding-left: 10px;
     }
-    
+
     .buttontw {
         appearance: none;
         background-color: transparent;
@@ -403,24 +403,24 @@
         touch-action: manipulation;
         will-change: transform;
     }
-    
+
     .buttontw:disabled {
         pointer-events: none;
     }
-    
+
     .buttontw:hover {
         color: #fff;
         background-color: rgb(196, 189, 181);
         box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
         transform: translateY(-0px);
-    
+
     }
-    
+
     .buttontw:active {
         box-shadow: none;
         transform: translateY(0);
     }
-    
+
     .bottomparttext {
         width: 100vw;
         height: 65vh;
@@ -430,39 +430,39 @@
         border-bottom-right-radius: 20px;
         display: flex;
         flex-direction: column;
-        
+
     }
-    
+
     .bottompartmenu {
         width: 340px;
         height: 100%;
         overflow: hidden;
         /* box-shadow: rgba(204, 200, 200, 0.25) 0 8px 15px; */
     }
-    
+
     .bottompartmenu img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        
+
     }
-    
+
     .bottompartmenutw {
         width: 60%;
         height: 100%;
         display: flex;
         flex-direction: column;
     }
-    
+
     .partmenuon {
         width: 130%;
-        height: 102% ;
+        height: 102%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
     }
-    
+
     .prem {
         font-family: "Pacifico", cursive;
         font-weight: 400;
@@ -470,14 +470,14 @@
         font-size: 5.5vw;
         color: #000;
     }
-    
+
     .premm {
         font-family: "poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
         color: rgb(107 114 128);
     }
-    
+
     .partmenutw {
         width: 152%;
         height: 100%;
@@ -489,7 +489,7 @@
         top: 20%;
         left: -12%;
     }
-    
+
     .partmenutwone {
         width: 50%;
         height: 100%;
@@ -498,7 +498,7 @@
         justify-content: center;
         justify-content: space-evenly;
     }
-    
+
     .tea {
         width: 45%;
         height: 100%;
@@ -508,7 +508,7 @@
         flex-direction: column;
         border-left: 2px solid rgb(209, 152, 46);
     }
-    
+
     .teatex {
         font-family: "Pacifico", cursive;
         font-weight: 400;
@@ -516,7 +516,7 @@
         font-size: 6.5vw;
         color: bisque;
     }
-    
+
     .teatexx {
         font-family: "poppins", sans-serif;
         font-weight: 400;
@@ -526,16 +526,16 @@
         padding-left: 10px;
         padding-top: 10px;
     }
-    
+
     .topparttexttw {
         width: 100%;
         height: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: end;
-    
+
     }
-    
+
     .partlast {
         width: 100%;
         height: 100px;
@@ -543,7 +543,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .buttonthr {
         display: flex;
         align-items: center;
@@ -565,7 +565,7 @@
         justify-content: center;
         justify-content: space-evenly;
     }
-    
+
     .circleth {
         width: 50px;
         height: 50px;
@@ -576,15 +576,312 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
-    
+
     .circleth img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         border-radius: 50%;
-        
+
+    }
+}
+
+@media (min-width: 300px) and (max-width : 400px) {
+    .Menume {
+        width: 100%;
+        height: 90vh;
+        color: rgb(40, 78, 111);
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .firstboxmenu {
+        width: 97%;
+        height: 80vh;
+        border-radius: 20px;
+    }
+
+    .firstboxmenu img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        border-radius: 20px;
+        object-position: center;
+        filter: brightness(79%);
+    }
+
+    .firstboxmenutwo {
+        width: 97%;
+        height: 80vh;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .topparttext {
+        width: 30vw;
+        height: 80vh;
+        border-top-left-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 0%;
+        display: none;
+    }
+
+    .Headfood {
+        font-family: 'poppins', sans-serif;
+        font-size: 3vw;
+        color: #3c3b3b;
+        font-weight: 400;
+        z-index: 99;
+    }
+
+    .Headfoodtw {
+        font-family: 'poppins', sans-serif;
+        font-size: 12px;
+        color: rgb(107 114 128);
+        font-weight: 400;
+        width: 260px;
+        height: 50px;
+        z-index: 99;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Headfoodthr {
+        font-family: 'poppins', sans-serif;
+        font-size: 12px;
+        color: antiquewhite;
+        font-weight: 400;
+        width: 260px;
+        height: 40px;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .buttontw {
+        appearance: none;
+        background-color: transparent;
+        border: 0.125em solid antiquewhite;
+        border-radius: 0.9375em;
+        box-sizing: border-box;
+        color: antiquewhite;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 2.4em;
+        min-width: 0;
+        outline: none;
+        padding: 7px 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform;
+    }
+
+    .buttontw:disabled {
+        pointer-events: none;
+    }
+
+    .buttontw:hover {
+        color: #fff;
+        background-color: rgb(196, 189, 181);
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-0px);
+
+    }
+
+    .buttontw:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    .bottomparttext {
+        width: 100vw;
+        height: 65vh;
+        position: absolute;
+        top: 2%;
+        left: 11%;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bottompartmenu {
+        width: 290px !important;
+        height: 100%;
+        overflow: hidden;
+        /* box-shadow: rgba(204, 200, 200, 0.25) 0 8px 15px; */
+    }
+
+    .bottompartmenu img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .bottompartmenutw {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partmenuon {
+        width: 130%;
+        height: 102%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .prem {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5.5vw;
+        color: #000;
+    }
+
+    .premm {
+        font-family: "poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(107 114 128);
+    }
+
+    .partmenutw {
+        width: 152%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        top: 20%;
+        left: -12%;
+    }
+
+    .partmenutwone {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .tea {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-left: 2px solid rgb(209, 152, 46);
+    }
+
+    .teatex {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 6.5vw;
+        color: bisque;
+    }
+
+    .teatexx {
+        font-family: "poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: rgb(107 114 128);
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .topparttexttw {
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+    }
+
+    .partlast {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonthr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        cursor: pointer;
+        width: 350px;
+        height: 60px;
+        background-image: linear-gradient(to top, #cccdce 0%, #fff 80%, #FDFDFD 100%);
+        border-radius: 30px;
+        border: 1px solid #8F9092;
+        transition: all 0.2s ease;
+        font-family: "poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #606060;
+        text-shadow: 0 1px #fff;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .circleth {
+        width: 50px;
+        height: 50px;
+        border: 0.1px solid black;
+        border-radius: 50%;
+        font-size: 30px;
+        color: #242323;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .circleth img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+
     }
 }

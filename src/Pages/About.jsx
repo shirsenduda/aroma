@@ -18,7 +18,6 @@ const About = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
     const tll = gsap.timeline();
-    
 
     // 🤓animation Part:-
     const animation = () => {
@@ -44,7 +43,7 @@ const About = () => {
           opacity: 0,
           stagger: 0.3,
           z: -300,
-          scale:0.5,
+          scale: 0.5,
           ease: "power1.inOut",
         },
         { scope: container }
@@ -102,7 +101,7 @@ const About = () => {
     };
     animation();
   });
-// .aboutbox
+  // .aboutbox
   return (
     <>
       <div className="ref={container}">
