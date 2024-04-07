@@ -220,3 +220,218 @@
     font-weight: 600;
   }
 }
+@media (min-width: 300px) and (max-width: 361px) {
+  .cardbgg {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    
+    flex-direction: column;
+  }
+  
+  .cardbgg img {
+    position: absolute;
+    display: block;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .cardbgg::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .andro {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    display: flex;
+    padding-left: 38px;
+    top: 9%;
+  }
+  
+  .androo {
+    width: 600px;
+    height: 80px;
+    top: 75%;
+  
+    position: absolute;
+    display: flex;
+    left: -33%;
+    align-items: center;
+    padding: 0px 140px;
+    justify-content: space-between;
+  }
+  
+  .Armac {
+    font-size: 45px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    text-shadow: 1.5px 1.5px 3.5px #000000;
+    color: #EBE8E2;
+    letter-spacing: 3px;
+  
+  }
+  
+  
+  .playstore-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(42, 41, 41);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .playstore-button:hover {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .texts {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .text-2 {
+    font-weight: 600;
+  }
+}
+@media (min-width: 361px) and (max-width: 400px) {
+  .cardbgg {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    
+    flex-direction: column;
+  }
+  
+  .cardbgg img {
+    position: absolute;
+    display: block;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .cardbgg::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .andro {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    display: flex;
+    padding-left: 38px;
+    top: 19%;
+  }
+  
+  .androo {
+    width: 600px;
+    height: 80px;
+    top: 75%;
+    position: absolute;
+    display: flex;
+    left: -26%;
+    align-items: center;
+    padding: 0px 130px;
+    justify-content: space-between;
+  }
+  
+  .Armac {
+    font-size: 45px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    text-shadow: 1.5px 1.5px 3.5px #000000;
+    color: #EBE8E2;
+    letter-spacing: 3px;
+  
+  }
+  
+  
+  .playstore-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(42, 41, 41);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .playstore-button:hover {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .texts {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .text-2 {
+    font-weight: 600;
+  }
+}

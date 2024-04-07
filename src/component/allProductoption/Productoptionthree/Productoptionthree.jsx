@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import './Productoptionthree.css'
-const Productoptionone = ({linefunctionn}) => {
+const Productoptionone = () => {
   return (
     <>
-      <div className="productoptionone" onClick={linefunctionn}>
+      <div className="productoptionont">
         <div className="sideiconimg">
           <i className="ri-beer-fill"></i>
         </div>

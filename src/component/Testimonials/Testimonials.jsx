@@ -27,14 +27,14 @@ const Swiperr = () => {
       spaceBetween={20}
       freeMode={true}
       navigation= {{
-        nextEl:".button-next-slide",
+        nextEl:".button-next-slidee",
         prevEl:".button-prev-slide",
     }}
       pagination={{ clickable: true }}
       breakpoints={{
         0: {
           slidesPerView:1,
-          spaceBetween:30
+          spaceBetween:20
         },
         480: {
           slidesPerView:1,
@@ -231,7 +231,7 @@ const Swiperr = () => {
       
 
 
-      <div className='button-next-slide'>
+      <div className='button-next-slidee'>
       <IoIosArrowForward />
       </div>
       <div className='button-prev-slide'>

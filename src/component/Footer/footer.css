@@ -219,15 +219,6 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Small screen  */
 @media (min-width: 400px) and (max-width :500px) {
   .footerbody {
@@ -294,6 +285,7 @@ h1 {
     transform: translate(-6%);
     width: 340px;
   }
+
   .creator {
     position: relative;
     font-family: 'Dancing Script', cursive;
@@ -306,6 +298,7 @@ h1 {
     letter-spacing: 1.5px;
     left: -145%;
   }
+
   .email {
     width: 300px;
     height: 50px;
@@ -315,5 +308,101 @@ h1 {
     position: relative;
     left: 25%;
   }
-  
+
+}
+@media (min-width: 300px) and (max-width :400px) {
+  .footerbody {
+    height: 105vh;
+    width: 100%;
+    position: relative;
+    top: 2rem;
+    margin-left: 0px;
+    background-color: #533529;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+  }
+
+  .logofootertwo {
+    width: 230px;
+    height: 230px;
+    left: -4%;
+    position: absolute;
+    top: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .logofooterthree {
+    width: 230px;
+    height: 230px;
+    left: 38%;
+    position: absolute;
+    top: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logofooterfour {
+    width: 230px;
+    height: 230px;
+    left: -2%;
+    position: absolute;
+    top: 162%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .copyright {
+    font-family: 'Macondo Swash Caps', cursive;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 9px;
+    font-weight: 100;
+    color: #fff3e0;
+    display: flex;
+    justify-content: center;
+    margin-top: 639px;
+    letter-spacing: 1.5px;
+    transform: translate(5%);
+    width: 310px;
+  }
+
+  .creator {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 9px;
+    font-weight: 100;
+    color: #fff3e0;
+    display: flex;
+    justify-content: center;
+    top: 618px;
+    letter-spacing: 1.5px;
+    left: -145%;
+  }
+
+  .email {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    top: 0%;
+  }
+  .row1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+}
 }

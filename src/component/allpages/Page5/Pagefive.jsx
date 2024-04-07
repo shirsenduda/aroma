@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
- "use client";
- import React, {  useState } from "react";
- import "./Pagefive.css";
- import Productoneopt from "../../allProductoption/Productoptionone/Productoptionone";
- import Producttwoopt from "../../allProductoption/Productoptiontwoo/Productoptiontwo";
- import Productthreeopt from "../../allProductoption/Productoptionthree/Productoptionthree";
- import Productitem from "../../Fooditems/Fooditem";
+"use client";
+import React, { useState } from "react";
+import "./Pagefive.css";
+import Productoneopt from "../../allProductoption/Productoptionone/Productoptionone";
+import Producttwoopt from "../../allProductoption/Productoptiontwoo/Productoptiontwo";
+import Productthreeopt from "../../allProductoption/Productoptionthree/Productoptionthree";
+import Productitem from "../../Fooditems/Fooditem";
 const Pagefive = () => {
   const [line, setline] = useState(true);
   const [linee, setlinee] = useState(true);
@@ -25,11 +25,9 @@ const Pagefive = () => {
         </div>
         <div className="firstroww">
           <div className="productoption">
-            <Productoneopt linefunctionn={changelinee} />
-            <Producttwoopt linefunction={changeline} />
-           
+            <Productoneopt />
+            <Producttwoopt />
             <Productthreeopt />
-          
           </div>
         </div>
         <div className="line">
@@ -38,14 +36,12 @@ const Pagefive = () => {
            */}
         </div>
         <div className="productsparttt">
-           <Productitem /> 
-           <Productitem /> 
-          </div>
+          <Productitem />
+          <Productitem />
+        </div>
       </div>
     </>
   );
 };
 
 export default Pagefive;
-
-
