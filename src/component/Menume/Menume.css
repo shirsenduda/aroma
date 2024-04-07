@@ -731,9 +731,10 @@
     }
 
     .bottompartmenu {
-        width: 290px !important;
+        width: 255px !important;
         height: 100%;
         overflow: hidden;
+       
         /* box-shadow: rgba(204, 200, 200, 0.25) 0 8px 15px; */
     }
 
