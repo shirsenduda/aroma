@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Loginmain.css";
 import Page2 from "../component/allpages/Page2/Pagetwo";
 import Cheaf from "../component/Cheaf/Cheaff";
+import Blogs from "../component/Blogs/Blog";
 const About = () => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
@@ -114,6 +115,13 @@ const About = () => {
         <div className="blogs">
           <h1 className="Employee">Our Employee's</h1>
           <Cheaf />
+        </div>
+        <h1 className="Blogtext">Blogs</h1>
+        <div className="blo">
+          <div className="blogimg">
+            <img src="./img/Blog.png" alt="" />
+          </div>
+          <Blogs />
         </div>
       </div>
     </>

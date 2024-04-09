@@ -50,10 +50,11 @@ const Navbar = () => {
         </div>
         <div className="partthreenav">
           <Search />
-          <Cart />
+          
           <Link to={"/aroma/Login"}>
             <Button bttt={bt} />
           </Link>
+          <Cart />
         </div>
       </div>
 
