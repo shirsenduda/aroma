@@ -8,7 +8,7 @@ const Smcard = ({fooddatapass}) => {
       <div className="cardbodyyy">
         <img src={fooddatapass.foodimg} alt="" />
         <div className='carttt'>
-        <img src={fooddatapass.cartimg} alt="" />
+        <i className="ri-shopping-cart-line"></i>
         </div>
         <div className='productnameei'>{fooddatapass.foodname}</div>
         <p className='pp'>Price:{fooddatapass.price}</p>
