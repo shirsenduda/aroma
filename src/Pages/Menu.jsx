@@ -124,7 +124,7 @@ const About = () => {
         <Menume />
         <div className="secondmenuu">
           <div className="secondmenuuu">
-            <h1 className="ourmen">Our Menu</h1>
+            <h1 className="ourmen">Classic Coffee</h1>
           </div>
           <Ourmenume />
         </div>
