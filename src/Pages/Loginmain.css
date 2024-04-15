@@ -83,6 +83,15 @@
     left: 45%;
     margin-top: 5%;
 }
+.aboutmainn{
+    width: 100%;
+    overflow-x: hidden;
+}
+.aboutmainn::-webkit-scrollbar{
+    display: none;
+}
+    
+    
 
 @media (max-width : 500px) {
     .Blogtext {
@@ -114,5 +123,9 @@
         justify-content: space-evenly;
         margin-top: 0%;
         position: absolute;
+    }
+    .aboutmainn{
+        width: 100%;
+        
     }
 }

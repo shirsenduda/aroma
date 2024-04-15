@@ -1,5 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
+import {NextUIProvider} from "@nextui-org/react";
 import React from "react"; //Comes form node Modules
 import ReactDOM from "react-dom/client"; //Comes form node Modules
 import App from "../src/App";
@@ -10,6 +11,7 @@ import Footer from "./component/Footer/Footer";
 import About from "./Pages/About";
 import Menu from "./Pages/Menu";
 import Login from "./Pages/Login";
+import Cart from "./Pages/Cart";
 
 // React router code
 // 🙂 Hope you Undestand this lines of code
@@ -44,10 +46,16 @@ const router = createBrowserRouter([
         path: "/aroma/Login",
         element: <Login />,
       },
+      {
+        path: "/aroma/Cart",
+        element: <Cart />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  <NextUIProvider>
   <RouterProvider router={router} />
+  </NextUIProvider>
 );

@@ -54,7 +54,11 @@ const Navbar = () => {
           <Link to={"/aroma/Login"}>
             <Button bttt={bt} />
           </Link>
+          <Link to={"/aroma/Cart"}>
           <Cart />
+          </Link>
+
+          
         </div>
       </div>
 

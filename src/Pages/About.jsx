@@ -105,7 +105,7 @@ const About = () => {
   // .aboutbox
   return (
     <>
-      <div className="ref={container}">
+      <div className="aboutmainn" ref={container}>
         <div className="Logincs">
           <Aboutme />
         </div>
