@@ -35,8 +35,8 @@ const Navbar = () => {
             </Link>
           </h3>
           <h3 className="item">Service</h3>
-          <h3 className="item">
-            <Link to={"/aroma/Menu"} className="Li">
+          <h3 className="item" >
+            <Link to={"/aroma/Menu"} className="Li" >
               {" "}
               Menu{" "}
             </Link>
@@ -50,15 +50,13 @@ const Navbar = () => {
         </div>
         <div className="partthreenav">
           <Search />
-          
+
           <Link to={"/aroma/Login"}>
             <Button bttt={bt} />
           </Link>
           <Link to={"/aroma/Cart"}>
-          <Cart />
+            <Cart />
           </Link>
-
-          
         </div>
       </div>
 
@@ -75,26 +73,26 @@ const Navbar = () => {
         <div className="parttwonavside"></div>
         <div className="partthreenavside">
           <h3 className="itemm">
-            <Link to={"/aroma/"} className="Li">
+            <Link to={"/aroma/"} className="Li" onClick={togglefunction}>
               Home
             </Link>
           </h3>
           <h3 className="itemm">Service</h3>
           <h3 className="itemm">
-            <Link to={"/aroma/Menu"} className="Li">
+            <Link to={"/aroma/Menu"} className="Li" onClick={togglefunction}>
               {" "}
               Menu{" "}
             </Link>
           </h3>
           <h3 className="itemm">
-            <Link to={"/aroma/about"} className="Li">
+            <Link to={"/aroma/about"} className="Li" onClick={togglefunction}>
               {" "}
               About{" "}
             </Link>
           </h3>
         </div>
         <div className="bttstore">
-          <Link to={"/aroma/Login"} className="Li">
+          <Link to={"/aroma/Login"} className="Li" onClick={togglefunction}>
             {" "}
             <Buttontw login="Login" />{" "}
           </Link>
