@@ -5,7 +5,7 @@ import "./Plus.css";
 const Plus = ({passchangenumber}) => {
   return (
     <>
-      <div className="plus" onClick={passchangenumber}>
+      <div className="plus" >
         <div className="storeplus">
           <svg
             xmlns="http://www.w3.org/2000/svg"
