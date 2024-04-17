@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Hamburder from "../Hamburger/Hamburger";
 import Cross from "../Cross/Cross";
 import Search from "../Search/Search";
@@ -18,6 +18,9 @@ const Navbar = () => {
   const togglefunction = () => {
     setSlide((item) => !item);
   };
+  useEffect(()=>{
+    console.log("Component Mount");
+  },[])
   return (
     <>
       {/* top Nav */}
