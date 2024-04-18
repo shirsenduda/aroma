@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import './Productoptionone.css'
 
-const Productoptionone = ({linefunctionn}) => {
+const Productoptionone = ({changedataAgain}) => {
   return (
     <>
    
-      <div className="productoptionone" onClick={linefunctionn}>
+      <div className="productoptionone" onClick={changedataAgain}>
         <div className="sideiconimg">
           <i className="ri-cup-line"></i>
         </div>

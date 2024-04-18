@@ -1,22 +1,64 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Pagefive.css";
 import Productoneopt from "../../allProductoption/Productoptionone/Productoptionone";
 import Producttwoopt from "../../allProductoption/Productoptiontwoo/Productoptiontwo";
 import Productthreeopt from "../../allProductoption/Productoptionthree/Productoptionthree";
 import Productitem from "../../Fooditems/Fooditem";
+import Poductitemtwo from "../../Fooditems two/Fooditemtwo";
+import Productitemthree from '../../Fooditems three/Fooditemthree'
 const Pagefive = () => {
-  const [line, setline] = useState(true);
-  const [linee, setlinee] = useState(true);
+  const [data, setdata] = useState(0);
 
-  const changeline = () => {
-    setline((itemm) => !itemm);
+  const rendercondition = () => {
+    if (data === 0) {
+      return (
+        <>
+          <div className="productsparttt">
+            <Productitem />
+            <Productitem />
+          </div>
+        </>
+      );
+    } else if (data === 1) {
+      return (
+        <>
+          <div className="productsparttt">
+            <Poductitemtwo />
+            <Poductitemtwo />
+          </div>
+          ;
+        </>
+      );
+    }
+    return (
+      <>
+        <div className="productsparttt">
+            <Productitemthree/>
+            <Productitemthree/>
+          </div>
+      </>
+    );
   };
-  const changelinee = () => {
-    setlinee((itemm) => !itemm);
+
+  const call = rendercondition()
+
+  const dataValueChange = () => {
+    setdata(0);
   };
+  const dataValueChangeAgain = () => {
+    setdata(1);
+  };
+  const dataValueChangeAgainagain = () => {
+    setdata(2);
+  };
+  useEffect(() => {
+    console.log("Mount food items");
+  }, []);
+
   return (
     <>
       <div className="Product">
@@ -25,20 +67,15 @@ const Pagefive = () => {
         </div>
         <div className="firstroww">
           <div className="productoption">
-            <Productoneopt />
-            <Producttwoopt />
-            <Productthreeopt />
+            <Productoneopt changedataAgain={dataValueChange} />
+            <Producttwoopt changedata={dataValueChangeAgain} />
+            <Productthreeopt changedatathree={dataValueChangeAgainagain} />
           </div>
         </div>
-        <div className="line">
-          {/* <div className={line === true ? "lineonee" : "lineoneee"}></div>
-          <div className={linee === false ? "lineonee" : "lineoneeee"}></div>
-           */}
-        </div>
-        <div className="productsparttt">
-          <Productitem />
-          <Productitem />
-        </div>
+        <div className="line"></div>
+
+        {/* Condition of changing fooditems data */}
+        {call}
       </div>
     </>
   );

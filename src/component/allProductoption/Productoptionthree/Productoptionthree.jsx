@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import './Productoptionthree.css'
-const Productoptionone = () => {
+import "./Productoptionthree.css";
+const Productoptionone = ({ changedatathree }) => {
   return (
     <>
-      <div className="productoptionont">
+      <div className="productoptionont" onClick={changedatathree}>
         <div className="sideiconimg">
           <i className="ri-beer-fill"></i>
         </div>
