@@ -96,9 +96,9 @@ const Pageone = () => {
         // }}
         className="Swiperthreeee"
       >
-        {fooddata.map((itemmm) => (
+        {fooddata.map((itemmm,key) => (
           <SwiperSlide>
-            <Smcardtwo fooddatapass={itemmm} />
+            <Smcardtwo fooddatapass={itemmm} Key={key} />
           </SwiperSlide>
         ))}
 

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+
+.cardbodyyy {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(43, 42, 42, 0.5);
+    overflow: hidden;
+    
+}
+
+.cardbodyyy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center;
+    border-radius: 20px;
+    filter: brightness(85%);
+    
+}
+
+.cardbodyyy .productnameei {
+    font-size: 19px;
+    font-family: 'Macondo Swash Caps', cursive;
+    position: absolute;
+    color: #F5FFFA;
+    top: 45%;
+    font-weight: 900;
+    left: 6%;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out
+}
+
+.cardbodyyy .pp {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    ;
+    position: absolute;
+    color: #FFF5EE;
+    top: 60%;
+    font-weight: 500;
+    left: 6%;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.cardbodyyy:hover .pp {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.cardbodyyy:hover {
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.01);
+}
+
+.cardbodyyy:hover {
+    background-color: black;
+    opacity: 0.9;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px 0px rgba(76, 75, 75, 0.5);
+}
+
+.cardbodyyy:hover .productnameei {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.cardbodyyy:hover .carttt  {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.carttt {
+    width: 50%;
+    height: 50%;
+    top: 12%;
+    left: 5%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center;
+    font-size: 24px;
+    color: #FFF5EE;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.carttt img {
+    width: 18%;
+    height: 26%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.carttt:active {
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .cardbodyyy {
+        width: 320px;
+        height: 200px;
+        object-fit: cover;
+        position: relative;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(43, 42, 42, 0.5);
+        overflow: hidden;
+    }
+}

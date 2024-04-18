@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './smcard.css'
-const Smcard = ({fooddatapass}) => {
+const Smcard = ({fooddatapass,Key}) => {
   return (
     <div>
-      <div className="cardbodyyy">
+      <div className="cardbodyyy" key={Key}>
         <img src={fooddatapass.foodimg} alt="" />
         <div className='carttt'>
         <i className="ri-shopping-cart-line"></i>

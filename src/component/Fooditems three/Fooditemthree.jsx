@@ -14,55 +14,53 @@ import "swiper/css/scrollbar";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { BsDot } from "react-icons/bs";
+import Bevarage from "../Bevarge/Bevarage";
 const Pageone = () => {
   const fooddata = [
     {
       id: 0,
       foodimg:
-        "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJlYWR8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1628229200053-53b768c4d37b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cartimg: "/img/cart.svg",
-      foodname: "Multigrain Bread",
-      price: "$11",
+      foodname: "Mango Juice",
+      price: "$13",
     },
     {
       id: 1,
       foodimg:
-        "https://images.unsplash.com/photo-1598373182133-52452f7691ef?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1629325288097-55f028c6a159?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cartimg: "/img/cart.svg",
-      foodname: "White Bread",
-      price: "$2",
+      foodname: "lemon Juice",
+      price: "$12",
     },
     {
       id: 2,
       foodimg:
-        "https://plus.unsplash.com/premium_photo-1677100463916-0c8f463d2738?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1592858167090-2473780d894d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cartimg: "/img/cart.svg",
-      foodname: "challah bread",
-      price: "$19",
+      foodname: "Orage Juice",
+      price: "$7",
     },
     {
       id: 3,
       foodimg:
-        "https://images.unsplash.com/photo-1612366747681-e4ca6992b1e9?q=80&w=2004&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1517959105821-eaf2591984ca?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cartimg: "/img/cart.svg",
-      foodname: "Roll with milk",
-      price: "$12",
+      foodname: "Cock",
+      price: "$4",
     },
     {
       id: 4,
       foodimg:
-        "https://images.unsplash.com/photo-1582215669338-6cfdb76bca45?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1583898350903-99fa829dad3d?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cartimg: "/img/cart.svg",
-      foodname: "Swedish Fika",
-      price: "$11.1",
+      foodname: "Srawberry Juice",
+      price: "$16.1",
     },
   ];
   return (
     <>
       <Swiper
-        slidesPerView={4}
-        spaceBetween={5}
-        freeMode={true}
         navigation={{
           nextEl: ".button-next-slide",
           prevEl: ".button-prev-slide",
@@ -96,10 +94,10 @@ const Pageone = () => {
         // }}
         className="Swiperthreeee"
       >
-        {fooddata.map((itemmm) => (
+        {fooddata.map((itemmm,key) => (
           <SwiperSlide>
             {/* <Smcardtwo fooddatapass={itemmm} /> */}
-            
+            <Bevarage fooddatapass={itemmm} Key={key} />
           </SwiperSlide>
         ))}
 
