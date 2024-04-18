@@ -18,9 +18,9 @@ const Navbar = () => {
   const togglefunction = () => {
     setSlide((item) => !item);
   };
-  useEffect(()=>{
+  useEffect(() => {
     console.log("Component Mount");
-  },[])
+  }, []);
   return (
     <>
       {/* top Nav */}
@@ -38,8 +38,8 @@ const Navbar = () => {
             </Link>
           </h3>
           <h3 className="item">Service</h3>
-          <h3 className="item" >
-            <Link to={"/aroma/Menu"} className="Li" >
+          <h3 className="item">
+            <Link to={"/aroma/Menu"} className="Li">
               {" "}
               Menu{" "}
             </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="partoneside">
           <Cross togle={togglefunction} />
           <div className="partonenavside">
-            <img src="./img/logtw.svg" alt="" />
+            <img src="./img/jj.svg" alt="" />
           </div>
           <Search />
         </div>
@@ -99,7 +99,6 @@ const Navbar = () => {
             {" "}
             <Buttontw login="Login" />{" "}
           </Link>
-
           <Buttontw sign="Sign-up" />
         </div>
       </div>

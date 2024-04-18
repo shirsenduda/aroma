@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './Services.css'
-const Services = ({passservicedata}) => {
+const Services = ({passservicedata,Key}) => {
   return (
     <>
-    <div className='Services'>
+    <div className='Services' key={Key}>
         <div className="serimg">
         <img src={passservicedata.servicedataimg} alt="" />
         </div>

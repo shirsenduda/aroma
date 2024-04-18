@@ -11,24 +11,24 @@ import Servicesfive from "../../allServices/servifive/Servicesfive";
 const Page4 = () => {
   const servicedata = [
     {
-      idd:0,
+      id:0,
       servicedataimg : "./img/serone.svg",
       servicedatatext : "Vending Machine",
     },
     {
-      idd:0,
+      id:1,
       servicedataimg : "./img/sertwo.svg",
       servicedatatext : "Take A Way",
     },
   ]
   const servicedatatwo = [
     {
-      idd:3,
+      id:3,
       servicedataimgtwo : "./img/serthree.svg",
       servicedatatexttwo : "Type of Coffee",
     },
     {
-      idd:4,
+      id:4,
       servicedataimgtwo : "./img/serfour.svg",
       servicedatatexttwo : "Beans Variant",
     },
@@ -36,7 +36,7 @@ const Page4 = () => {
   ]
   const servicedatathree = [
     {
-      idd:5,
+      id:5,
       servicedataimgthree : "./img/serfive.svg",
       servicedatatextthree : "Pastry",
     },
@@ -46,23 +46,23 @@ const Page4 = () => {
       <div className="page4">
       
         <div className="partonedi">
-          {servicedata.map((item)=>(
+          {servicedata.map((item,key)=>(
             // eslint-disable-next-line react/jsx-key
-            <Services passservicedata={item} />
+            <Services passservicedata={item} Key={key} />
           ))}
           
           
         </div>
         <div className="partonedii">
-        {servicedatatwo.map((item)=>(
+        {servicedatatwo.map((item,key)=>(
             // eslint-disable-next-line react/jsx-key
-            <Servicesthree passservicedatatwo={item} />
+            <Servicesthree passservicedatatwo={item} Key={key} />
           ))}
         </div>
         <div className="partonediii">
-        {servicedatathree.map((item)=>(
+        {servicedatathree.map((item,key)=>(
             // eslint-disable-next-line react/jsx-key
-            <Servicesfive passservicedatathree={item} />
+            <Servicesfive passservicedatathree={item} Key={key} />
           ))}
         </div>
       </div>
