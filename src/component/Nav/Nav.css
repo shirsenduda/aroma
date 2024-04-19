@@ -79,7 +79,7 @@
 
   .partonenav {
     width: 92px;
-  height: 80px;
+    height: 80px;
     transform: translateX(10%) !important;
     margin-top: 10px;
   }
@@ -109,18 +109,19 @@
     position: absolute;
     top: 0%;
   }
+
   .partonenav {
     width: 90px;
-  height: 80px;
+    height: 80px;
     transform: translateX(10%) !important;
-    margin-top: 10px;
+    margin-top: 3px;
   }
 
   .parttwonav {
     display: none;
   }
 
-  .partthreenav { 
+  .partthreenav {
     width: 110px;
     display: flex;
     justify-content: space-around;
