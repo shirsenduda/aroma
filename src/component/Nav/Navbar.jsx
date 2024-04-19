@@ -18,6 +18,16 @@ const Navbar = () => {
   const togglefunction = () => {
     setSlide((item) => !item);
   };
+
+  const dropfunction = ()=>{
+    window.scroll({
+      top : 0,
+      behavior : "smooth"
+  })
+  }
+
+  const windowscroll = dropfunction();
+
   useEffect(() => {
     console.log("Component Mount");
   }, []);
@@ -28,7 +38,7 @@ const Navbar = () => {
         <Hamburder togle={togglefunction} />
 
         <div className="partonenav">
-          <img src="./img/jj.png" alt="" />
+          <img src="./img/Logoo.png" alt="" />
         </div>
         <div className="parttwonav">
           <h3 className="item">
@@ -37,7 +47,8 @@ const Navbar = () => {
               Home
             </Link>
           </h3>
-          <h3 className="item">Service</h3>
+
+          <h3 className="item" onClick={windowscroll}>Service</h3>
           <h3 className="item">
             <Link to={"/aroma/Menu"} className="Li">
               {" "}
@@ -68,7 +79,7 @@ const Navbar = () => {
         <div className="partoneside">
           <Cross togle={togglefunction} />
           <div className="partonenavside">
-            <img src="./img/jj.png" alt="" />
+            <img src="./img/Logoo.png" alt="" />
           </div>
           <Search />
         </div>

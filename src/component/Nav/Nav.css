@@ -11,8 +11,8 @@
 }
 
 .partonenav {
-  width: 75px;
-  height: 65px;
+  width: 92px;
+  height: 80px;
 }
 
 .partonenav img {
@@ -78,8 +78,8 @@
   }
 
   .partonenav {
-    width: 80px;
-    height: 55px;
+    width: 92px;
+  height: 80px;
     transform: translateX(10%) !important;
     margin-top: 10px;
   }
@@ -110,8 +110,8 @@
     top: 0%;
   }
   .partonenav {
-    width: 80px;
-    height: 55px;
+    width: 90px;
+  height: 80px;
     transform: translateX(10%) !important;
     margin-top: 10px;
   }
