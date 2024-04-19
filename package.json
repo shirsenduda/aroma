@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dotlottie/player-component": "^2.7.12",
     "@gsap/react": "^2.1.0",
     "@nextui-org/react": "^2.2.10",
     "framer-motion": "^11.0.28",

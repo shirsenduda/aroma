@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
-import {NextUIProvider} from "@nextui-org/react";
-import React from "react"; //Comes form node Modules
+import { NextUIProvider } from "@nextui-org/react";
+import React, { useEffect, useState } from "react"; //Comes form node Modules
 import ReactDOM from "react-dom/client"; //Comes form node Modules
 import App from "../src/App";
 import "./index.css";
@@ -12,15 +12,32 @@ import About from "./Pages/About";
 import Menu from "./Pages/Menu";
 import Login from "./Pages/Login";
 import Cart from "./Pages/Cart";
+import Loader from "./Loader/Loader";
 
 // React router code
 // 🙂 Hope you Undestand this lines of code
 const Layout = () => {
+  const [loadercondition, setloadercondition] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setloadercondition();
+    }, 1000);
+  }, []);
+
+  const callLoader = Loader();
+
   return (
     <>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      {loadercondition === true ? (
+        callLoader
+      ) : (
+        <>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </>
+      )}
     </>
   );
 };
@@ -56,6 +73,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <NextUIProvider>
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </NextUIProvider>
 );

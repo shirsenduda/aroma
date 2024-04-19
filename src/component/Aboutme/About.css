@@ -133,6 +133,24 @@
     justify-content: left;
     margin-bottom: 2%;
 }
+.abiutbut {
+    width: 150px;
+    height: 40px;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .abiutbut:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 16.4px;
+  }
 
 @media  (min-width: 300px) and (max-width : 500px){
     .Aboutme {
@@ -253,7 +271,7 @@
     
     .rov {
         font-family: 'poppins', sans-serif;
-        font-size: 4vw;
+        font-size: 16px;
         color: #e4e4d5;
         font-weight: 500;
         z-index: 99;
@@ -264,7 +282,7 @@
     
     .rovv {
         font-family: 'poppins', sans-serif;
-        font-size: 1.8vw;
+        font-size: 9px;
         color: #e4e4d5;
         font-weight: 500;
         z-index: 99;
@@ -275,10 +293,28 @@
     
     .rovvs {
         width: 100%;
-        height: 20vh;
+        height: 11vh;
         display: flex;
         justify-content: left;
         position: relative;
-        top: -36%;
+        top: -44%;
     }
+    .abiutbut {
+        width: 150px;
+        height: 33.3px;
+        border: 3px solid #315cfd;
+        border-radius: 45px;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: white;
+        font-size: 16px;
+        font-weight: 550;
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      .abiutbut:hover {
+        background: #315cfd;
+        color: white;
+        font-size: 16.4px;
+      }
 }

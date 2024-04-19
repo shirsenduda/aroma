@@ -46,7 +46,8 @@ const Aboutme = () => {
                   </span>
                   <br />
                   <span className="rovvs">
-                    <Buttontw getstart="GET STARTED" />
+                    {/* <Buttontw getstart="" /> */}
+                    <button className="abiutbut">GET STARTED</button>
                   </span>
                 </div>
               </div>
