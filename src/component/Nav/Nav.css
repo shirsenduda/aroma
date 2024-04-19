@@ -12,7 +12,7 @@
 
 .partonenav {
   width: 92px;
-  height: 80px;
+  height: 85px;
 }
 
 .partonenav img {
@@ -81,7 +81,7 @@
     width: 92px;
     height: 80px;
     transform: translateX(10%) !important;
-    margin-top: 10px;
+    margin-top: 3px;
   }
 
   .parttwonav {
