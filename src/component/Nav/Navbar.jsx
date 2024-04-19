@@ -28,7 +28,7 @@ const Navbar = () => {
         <Hamburder togle={togglefunction} />
 
         <div className="partonenav">
-          <img src="./img/jj.svg" alt="" />
+          <img src="./img/jj.png" alt="" />
         </div>
         <div className="parttwonav">
           <h3 className="item">
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="partoneside">
           <Cross togle={togglefunction} />
           <div className="partonenavside">
-            <img src="./img/jj.svg" alt="" />
+            <img src="./img/jj.png" alt="" />
           </div>
           <Search />
         </div>

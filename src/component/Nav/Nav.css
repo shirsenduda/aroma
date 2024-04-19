@@ -11,8 +11,8 @@
 }
 
 .partonenav {
-  width: 120px;
-  height: 55px;
+  width: 75px;
+  height: 65px;
 }
 
 .partonenav img {
@@ -44,7 +44,7 @@
 }
 
 .item {
-  color: #f8e4be;
+  color: #F6E5DA;
   font-family: "poppins", sans-serif;
   font-size: 17px;
   font-weight: 550;
@@ -78,8 +78,8 @@
   }
 
   .partonenav {
-    width: 100px;
-    height: 45px;
+    width: 80px;
+    height: 55px;
     transform: translateX(10%) !important;
     margin-top: 10px;
   }
@@ -89,7 +89,7 @@
   }
 
   .partthreenav {
-    width: 160px;
+    width: 140px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -110,8 +110,8 @@
     top: 0%;
   }
   .partonenav {
-    width: 100px;
-    height: 45px;
+    width: 80px;
+    height: 55px;
     transform: translateX(10%) !important;
     margin-top: 10px;
   }
@@ -121,7 +121,7 @@
   }
 
   .partthreenav { 
-    width: 140px;
+    width: 110px;
     display: flex;
     justify-content: space-around;
     align-items: center;
