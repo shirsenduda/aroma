@@ -10,7 +10,7 @@ const Addtocart = () => {
     <>
       <div className="cartboxmain">
         <div className="cartboxmainleft">
-          <Cartitem/>
+          <Cartitem />
         </div>
         <div className="cartboxmainright">
           <div className="totalitems">
@@ -27,14 +27,12 @@ const Addtocart = () => {
               <div className="pricetotalleft">Delivery Charges</div>
               <div className="pricetotalright">₹40 Free</div>
             </div>
-            <div className="price">
-              <div className="pricetotalleft">Secured Packaging Fee</div>
-              <div className="pricetotalright">₹99</div>
-            </div>
+            
             <div className="pricetotal">
               <div className="pricetotalleft">Total Amount</div>
               <div className="pricetotalright">₹1,32,097</div>
             </div>
+            <button className="cartbutt">PROCEED TO CHECKOUT</button>
           </div>
         </div>
       </div>
