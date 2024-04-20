@@ -80,8 +80,12 @@
 .Blogtext {
     position: relative;
     top: 0%;
-    left: 45%;
+    left: 44.5%;
+    width: 120px;
     margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid antiquewhite;
 }
 .aboutmainn{
     width: 100%;
@@ -96,9 +100,13 @@
 @media (max-width : 500px) {
     .Blogtext {
         position: relative;
+        width: 100px;
+        height: 48px;
         top: 0%;
-        left: 40%;
+        left: 37%;
         margin-top: 5%;
+        display: flex;
+        justify-content: center;
     }
     .blogs {
         width: 100%;
