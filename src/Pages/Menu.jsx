@@ -11,6 +11,8 @@ import "./mainmenuu.css";
 import Ourmenume from "../component/Ourmenume/Ourmenume";
 import Coffeeicon from "../component/Coffeeicon/Coffeeicon";
 import Productitem from "../component/Fooditems/Fooditem";
+import Page4 from "../component/allpages/Page4/Pagefour";
+import Pagethree from "../component/allpages/Page3/Pagethree";
 const About = () => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
@@ -115,6 +117,18 @@ const About = () => {
           ease: "power1.inOut",
         },
       });
+      gsap.from(".bestwishes,.Cookiesboxt", {
+        y: 20,
+        duration: 1, // seconds
+        delay: 0.6,
+        opacity: 0,
+        stagger: 0.5,
+        z: -300,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".bestwishes,.Cookiesboxt",
+        },
+      });
     };
     animation();
   });
@@ -128,7 +142,9 @@ const About = () => {
           </div>
           <Ourmenume />
         </div>
-        <div className="thirdmenuu"></div>
+        <div className="thirdmenuu">
+          <Pagethree/>
+        </div>
       </div>
     </>
   );

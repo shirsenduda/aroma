@@ -19,7 +19,7 @@ const Recipe = () => {
                 src="https://images.unsplash.com/photo-1586558284960-362f8577f94d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
-              <div className="desc"></div>
+              <div className="descc"></div>
             </div>
           </div>
           <div className="recipecircletwo"></div> */}

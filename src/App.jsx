@@ -107,18 +107,7 @@ const App = () => {
           trigger: ".page4",
         },
       });
-      gsap.from(".bestwishes,.Cookiesboxt", {
-        y: 20,
-        duration: 1, // seconds
-        delay: 0.6,
-        opacity: 0,
-        stagger: 0.5,
-        z: -300,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: ".bestwishes,.Cookiesboxt",
-        },
-      });
+     
       gsap.from(".Swipertwo", {
         y: 10,
         duration: 1, // seconds
@@ -131,7 +120,7 @@ const App = () => {
           trigger: ".Swipertwo",
         },
       });
-      gsap.from(".Product,.zerorow,.firstroww,.line,.productsparttt", {
+      gsap.from(".Product", {
         y: 10,
         duration: 1, // seconds
         delay: 0.5,
@@ -140,10 +129,10 @@ const App = () => {
         z: -300,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: ".Product,.zerorow,.firstroww,.line,.productsparttt",
+          trigger: ".Product",
         },
       });
-      gsap.from(".pagesixx,.andro,.androo", {
+      gsap.from(".pagesixx", {
         y: 10,
         duration: 1, // seconds
         delay: 0.5,
@@ -152,10 +141,10 @@ const App = () => {
         z: -300,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: ".pagesixx,.andro,.androo",
+          trigger: ".pagesixx",
         },
       });
-      gsap.from(".Testimonial,.Testimonialparttwo,.Testimonialmain", {
+      gsap.from(".Pageseven", {
         y: 10,
         duration: 1, // seconds
         delay: 0.5,
@@ -164,7 +153,7 @@ const App = () => {
         z: -300,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: ".Testimonial,.Testimonialparttwo,.Testimonialmain",
+          trigger: ".Pageseven",
         },
       });
       gsap.from(".Menume", {
@@ -189,7 +178,7 @@ const App = () => {
       <div className={Appcss.main} ref={container}>
         <Pageonee />
         <PageFour />
-        <Pagethree />
+       
         <Pagetwoo />
         <Pagefive />
         <Pagesix />
