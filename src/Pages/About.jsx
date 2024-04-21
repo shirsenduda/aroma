@@ -49,19 +49,19 @@ const About = () => {
         },
         { scope: container }
       );
-      // tll.from(
-      //   ".abouttext,.abouttextt",
-      //   {
-      //     y: 15,
-      //     duration: 2, // seconds
-      //     delay: 0.5,
-      //     opacity: 0,
-      //     stagger: 0.3,
-      //     z: -300,
-      //     ease: "power1.inOut",
-      //   },
-      //   { scope: container }
-      // );
+      tll.from(
+        ".topAboutpartrighttop",
+        {
+          y: 15,
+          duration: 2, // seconds
+          delay: 0.5,
+          opacity: 0,
+          stagger: 0.3,
+          z: -300,
+          ease: "power1.inOut",
+        },
+        { scope: container }
+      );
       tll.from(
         ".topAboutpartrightbottom",
         {
