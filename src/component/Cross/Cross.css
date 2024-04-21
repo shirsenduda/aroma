@@ -19,16 +19,17 @@
         justify-content: center;
         align-items: center;
         justify-content: space-evenly;
+        
     }
 
-    .crossone {
+    /* .crossone {
         width: 30px;
         height: 2px;
         background-color: #FFF8E8;
         transition: all 0.4s ease-in-out;
         transform: rotate(50deg);
         position: relative;
-        top: 9.4px;
+        top: 0px;
         border-radius: 3px;
     }
 
@@ -39,7 +40,43 @@
         background-color: #FFF8E8;
         transform: rotate(-50deg);
         position: relative;
-        top: -4px;
+        top: 0px;
         border-radius: 3px;
+    } */
+
+    .crossone {
+        width: 40px;
+        height: 40px;
+        
+        position: relative;
+        top: 5px;
+        border-radius: 6px;
+        
+    }
+
+    .crossone:before,
+    .crossone:after {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 2.8px;
+        background-color: #FFF8E8;
+        border-radius: 2px;
+        top: 16px;
+        box-shadow: 0 0 2px 0 #ccc;
+    }
+
+    .crossone:before {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        left: 2px;
+    }
+
+    .crossone:after {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        right: 2px;
     }
 }
