@@ -48,7 +48,7 @@
         white-space: nowrap;
         display: flex;
         flex-direction: column;
-        padding: 25px;
+        padding: 17px;
         margin-top: 25px;
         margin-bottom: 25px;
     }
@@ -185,7 +185,7 @@
         white-space: nowrap;
         display: flex;
         flex-direction: column;
-        padding: 25px;
+        padding: 16px;
         margin-top: 25px;
         margin-bottom: 25px;
     }
