@@ -83,7 +83,7 @@ const Navbar = () => {
           <div className="partonenavside">
             <img src="./img/Logootw.png" alt="" />
           </div>
-          <Search />
+          <i className="ri-search-line" id="searchside"></i>
         </div>
 
         <div className="parttwonavside"></div>

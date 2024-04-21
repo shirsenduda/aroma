@@ -115,4 +115,8 @@
         transform: translate(20%);
         display: none;
       }
+      #searchside{
+        font-size: 26px !important;
+        margin-right: 5px;
+      }
 }
