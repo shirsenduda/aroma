@@ -19,12 +19,12 @@ const Navbar = () => {
     setSlide((item) => !item);
   };
 
-  const dropfunction = ()=>{
+  const dropfunction = () => {
     window.scroll({
-      top : 0,
-      behavior : "smooth"
-  })
-  }
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   const windowscroll = dropfunction();
 
@@ -48,17 +48,19 @@ const Navbar = () => {
             </Link>
           </h3>
 
-          <h3 className="item" onClick={windowscroll}>Service</h3>
           <h3 className="item">
             <Link to={"/aroma/Menu"} className="Li">
-              {" "}
-              Menu{" "}
+              Menu
+            </Link>
+          </h3>
+          <h3 className="item">
+            <Link to={"/aroma/Recipe"} className="Li">
+              Recipes
             </Link>
           </h3>
           <h3 className="item">
             <Link to={"/aroma/about"} className="Li">
-              {" "}
-              About{" "}
+              About
             </Link>
           </h3>
         </div>
@@ -91,24 +93,26 @@ const Navbar = () => {
               Home
             </Link>
           </h3>
-          <h3 className="itemm">Service</h3>
+
           <h3 className="itemm">
             <Link to={"/aroma/Menu"} className="Li" onClick={togglefunction}>
-              {" "}
-              Menu{" "}
+              Menu
+            </Link>
+          </h3>
+          <h3 className="itemm">
+            <Link to={"/aroma/Recipe"} className="Li" onClick={togglefunction}>
+              Recipes
             </Link>
           </h3>
           <h3 className="itemm">
             <Link to={"/aroma/about"} className="Li" onClick={togglefunction}>
-              {" "}
-              About{" "}
+              About
             </Link>
           </h3>
         </div>
         <div className="bttstore">
           <Link to={"/aroma/Login"} className="Li" onClick={togglefunction}>
-            {" "}
-            <Buttontw login="Login" />{" "}
+            <Buttontw login="Login" />
           </Link>
           <Buttontw sign="Sign-up" />
         </div>

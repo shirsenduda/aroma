@@ -8,6 +8,7 @@ const Hamburger = ({togle}) => {
     
     <div className="burger" onClick={togle}>
     <i className="ri-menu-2-line"></i>
+    {/* <i className="ri-menu-4-line"></i> */}
     </div>
     
     </>

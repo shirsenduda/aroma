@@ -13,6 +13,7 @@ import Menu from "./Pages/Menu";
 import Login from "./Pages/Login";
 import Cart from "./Pages/Cart";
 import Loader from "./Loader/Loader";
+import Recipe from './Pages/Recipe'
 
 // React router code
 // 🙂 Hope you Undestand this lines of code
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "/aroma/Menu",
         element: <Menu />,
+      },
+      {
+        path: "/aroma/Recipe",
+        element: <Recipe/>,
       },
       {
         path: "/aroma/Login",
