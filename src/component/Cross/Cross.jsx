@@ -7,8 +7,8 @@ const Cross = ({togle}) => {
   return (
     <>
     <div className="Cross" onClick={togle}>
-    {/* <i className="ri-close-fill"></i> */}
-    <div className='crossone'></div>
+    <i className="ri-close-line"></i>
+    
     {/* <div className="crosstwo"></div> */}
     </div>
     </>

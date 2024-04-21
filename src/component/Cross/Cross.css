@@ -1,82 +1,19 @@
-.Cross {
+.Cross{
     width: 55px;
     height: 55px;
     font-size: 43px;
     color: #FFF8E8;
-
+    
     display: none;
 }
 
-@media (max-width : 500px) {
-    .Cross {
+@media (max-width : 500px){
+    .Cross{
         width: 40px;
         height: 40px;
-        font-size: 45px;
+        font-size: 33px;
         color: #FFF8E8;
         display: block;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-evenly;
-        
-    }
-
-    /* .crossone {
-        width: 30px;
-        height: 2px;
-        background-color: #FFF8E8;
-        transition: all 0.4s ease-in-out;
-        transform: rotate(50deg);
-        position: relative;
-        top: 0px;
-        border-radius: 3px;
-    }
-
-    .crosstwo {
-        width: 30px;
-        height: 2px;
-        transition: all 0.4s ease-in-out;
-        background-color: #FFF8E8;
-        transform: rotate(-50deg);
-        position: relative;
-        top: 0px;
-        border-radius: 3px;
-    } */
-
-    .crossone {
-        width: 40px;
-        height: 40px;
-        
-        position: relative;
-        top: 5px;
-        border-radius: 6px;
-        
-    }
-
-    .crossone:before,
-    .crossone:after {
-        content: '';
-        position: absolute;
-        width: 36px;
-        height: 2.8px;
-        background-color: #FFF8E8;
-        border-radius: 2px;
-        top: 16px;
-        box-shadow: 0 0 2px 0 #ccc;
-    }
-
-    .crossone:before {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        transform: rotate(45deg);
-        left: 2px;
-    }
-
-    .crossone:after {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        right: 2px;
+        font-weight: 200;
     }
 }
