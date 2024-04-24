@@ -145,7 +145,7 @@ const App = () => {
           trigger: ".pagesixx",
         },
       });
-      gsap.from(".Pageseven", {
+      gsap.from(".Pageseven,.Testimonial,.Testimonialparttwo", {
         y: 10,
         duration: 1, // seconds
         delay: 0.5,
@@ -154,7 +154,7 @@ const App = () => {
         z: -300,
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: ".Pageseven",
+          trigger: ".Pageseven,.Testimonial,.Testimonialparttwo",
         },
       });
       // gsap.from(".Menume", {
