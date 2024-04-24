@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./Recipe.css";
-
 import { useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
