@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
   font-family: 'Poppins', sans-serif;
 }
 
@@ -19,13 +20,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
   border-radius: 20px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #221518;
+  background: transparent;
 }
 
 /* Handle */

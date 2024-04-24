@@ -1,0 +1,102 @@
+.topbt {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(39 37 37 / 70%);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 280%;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: #FACE7F;
+
+}
+
+.topbt:hover {
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    transition-duration: 0.3s;
+
+}
+
+@media (min-width: 400px) and (max-width :500px) {
+    .topbt {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(39 37 37 / 70%);
+        border: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        overflow: hidden;
+        position: absolute;
+        top: 40px;
+        left: 80%;
+    }
+
+    .svgIcon {
+        width: 12px;
+        transition-duration: 0.3s;
+    }
+
+    .svgIcon path {
+        fill: #FACE7F;
+    }
+
+    .topbt:hover {
+        box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+        transition-duration: 0.3s;
+    }
+
+}
+@media (min-width: 300px) and (max-width :400px) {
+    .topbt {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(39 37 37 / 70%);
+        border: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        overflow: hidden;
+        position: absolute;
+        top: 40px;
+        left: 70%;
+    }
+
+    .svgIcon {
+        width: 12px;
+        transition-duration: 0.3s;
+    }
+
+    .svgIcon path {
+        fill: #FACE7F;
+    }
+
+    .topbt:hover {
+        box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+        transition-duration: 0.3s;
+    }
+
+}

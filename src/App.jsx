@@ -14,6 +14,7 @@ import PageFour from "./component/allpages/Page4/Pagefour";
 import Pagefive from "./component/allpages/Page5/Pagefive";
 import Pagesix from "./component/allpages/Page6/Pagesix";
 import Pageseven from "./component/allpages/Page7/Pageseven";
+import Scrolltop from "./component/Scrolltop/Scrolltop";
 //hello
 const App = () => {
   const [ramu, setramu] = useState("hi");
@@ -144,30 +145,30 @@ const App = () => {
           trigger: ".pagesixx",
         },
       });
-      gsap.from(".Pageseven", {
-        y: 10,
-        duration: 1, // seconds
-        delay: 0.5,
-        opacity: 0,
-        stagger: 0.3,
-        z: -300,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: ".Pageseven",
-        },
-      });
-      gsap.from(".Menume", {
-        y: 10,
-        duration: 1, // seconds
-        delay: 0.5,
-        opacity: 0,
-        stagger: 0.3,
-        z: -300,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: ".Menume",
-        },
-      });
+      // gsap.from(".Pageseven", {
+      //   y: 10,
+      //   duration: 1, // seconds
+      //   delay: 0.5,
+      //   opacity: 0,
+      //   stagger: 0.3,
+      //   z: -300,
+      //   ease: "power1.inOut",
+      //   scrollTrigger: {
+      //     trigger: ".Pageseven",
+      //   },
+      // });
+      // gsap.from(".Menume", {
+      //   y: 10,
+      //   duration: 1, // seconds
+      //   delay: 0.5,
+      //   opacity: 0,
+      //   stagger: 0.3,
+      //   z: -300,
+      //   ease: "power1.inOut",
+      //   scrollTrigger: {
+      //     trigger: ".Menume",
+      //   },
+      // });j
     };
 
     // call animaton function

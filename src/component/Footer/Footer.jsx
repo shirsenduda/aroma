@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./footer.css";
 import Button from "../Buttons/Button";
+import Scrolltop from "../Scrolltop/Scrolltop";
 const Footer = () => {
   const [bt, setbt] = useState("Check Now");
   return (
@@ -54,6 +55,7 @@ const Footer = () => {
               </div>
             </h5>
           </div>
+          <Scrolltop/>
           <div className="creator">Created by SD-DAS</div>
           <div className="copyright">
             Copyright 2023 Aroma Cafe . All Rights Reserved.
