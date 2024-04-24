@@ -231,7 +231,7 @@
     .Recipe {
         background-color: transparent;
     }
-    
+
     .Recipemain {
         width: 100%;
         height: 3050px;
@@ -240,9 +240,9 @@
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
-    
+
     }
-    
+
     .recipecircle {
         width: 100%;
         height: 400px;
@@ -252,7 +252,7 @@
         align-items: center;
         padding: 10px 10px;
     }
-    
+
     .recipeadv {
         width: 100%;
         height: 550px;
@@ -262,7 +262,7 @@
         align-items: center;
         border-radius: 16px;
     }
-    
+
     .recipeadv img {
         width: 100%;
         height: 100%;
@@ -270,12 +270,13 @@
         border-radius: 16px;
         filter: brightness(80%);
     }
+
     /* hjk,giknuyghiknu */
     .recipecircletwo {
         width: 100%;
         height: 1900px;
     }
-    
+
     .descc {
         width: 400px;
         height: 250px;
@@ -287,23 +288,23 @@
         justify-content: space-evenly;
         flex-direction: column;
     }
-    
+
     .Discover {
         font-weight: 400;
         color: RGB(255, 255, 255);
         font-size: 16px;
-    
+
     }
-    
+
     .Discoverr {
         font-family: "Michroma", sans-serif;
         font-weight: 400;
         font-style: normal;
         color: RGB(255, 255, 255);
         font-size: 33px;
-    
+
     }
-    
+
     .Discoverrr {
         width: 100%;
         height: 80px;
@@ -313,7 +314,7 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
+
     .Discoverrrone {
         width: 320px;
         height: 25px;
@@ -326,7 +327,7 @@
         font-weight: 400;
         color: RGB(255, 255, 255);
     }
-    
+
     .Discoverrrtwo {
         width: 320px;
         height: 25px;
@@ -338,9 +339,9 @@
         font-size: 18px;
         font-weight: 400;
         color: RGB(255, 255, 255);
-    
+
     }
-    
+
     .Discoverrrthree {
         width: 320px;
         height: 25px;
@@ -352,7 +353,7 @@
         align-items: center;
         color: RGB(255, 255, 255);
     }
-    
+
     .recipecircletwoon {
         width: 100%;
         height: 110px;
@@ -360,7 +361,7 @@
         justify-content: center;
         padding: 0px 13px;
     }
-    
+
     .childrec {
         width: 560px;
         height: 100%;
@@ -371,12 +372,12 @@
         border-bottom: 0.5px solid whitesmoke;
         padding-left: 0px;
     }
-    
-    
+
+
     .childrec::-webkit-scrollbar {
         display: none;
     }
-    
+
     .recipystore {
         width: 100%;
         height: 40px;
@@ -385,7 +386,7 @@
         font-weight: 700;
         color: aliceblue;
     }
-    
+
     .recipystoreon {
         width: 100%;
         height: 570px;
@@ -398,7 +399,7 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
+
     .refreshdata {
         width: 100%;
         height: 70px;
@@ -406,7 +407,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .storerefresh {
         width: 200px;
         height: 100%;
@@ -425,22 +426,22 @@
         touch-action: manipulation;
         vertical-align: baseline;
     }
-    
+
     .storerefresh:hover {
         transform: translateY(-1px);
     }
-    
+
     .storerefresh:active {
         transform: translateY(0);
     }
-    
-    
+
+
     .refreshicon {
         color: whitesmoke;
         font-size: 26px;
         margin-right: 4px;
     }
-    
+
     .refreshname {
         font-size: 24px;
         color: whitesmoke;
@@ -450,11 +451,12 @@
         cursor: pointer;
     }
 }
+
 @media (min-width: 300px) and (max-width : 400px) {
     .Recipe {
         background-color: transparent;
     }
-    
+
     .Recipemain {
         width: 100%;
         height: 2850px;
@@ -463,9 +465,9 @@
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
-    
+        overflow-x: hidden;
     }
-    
+
     .recipecircle {
         width: 100%;
         height: 400px;
@@ -475,7 +477,7 @@
         align-items: center;
         padding: 10px 10px;
     }
-    
+
     .recipeadv {
         width: 100%;
         height: 550px;
@@ -485,7 +487,7 @@
         align-items: center;
         border-radius: 16px;
     }
-    
+
     .recipeadv img {
         width: 100%;
         height: 100%;
@@ -493,12 +495,13 @@
         border-radius: 16px;
         filter: brightness(80%);
     }
+
     /* hjk,giknuyghiknu */
     .recipecircletwo {
         width: 100%;
         height: 1900px;
     }
-    
+
     .descc {
         width: 370px;
         height: 250px;
@@ -510,23 +513,23 @@
         justify-content: space-evenly;
         flex-direction: column;
     }
-    
+
     .Discover {
         font-weight: 400;
         color: RGB(255, 255, 255);
         font-size: 16px;
-    
+
     }
-    
+
     .Discoverr {
         font-family: "Michroma", sans-serif;
         font-weight: 400;
         font-style: normal;
         color: RGB(255, 255, 255);
         font-size: 33px;
-    
+
     }
-    
+
     .Discoverrr {
         width: 100%;
         height: 80px;
@@ -536,7 +539,7 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
+
     .Discoverrrone {
         width: 320px;
         height: 25px;
@@ -549,7 +552,7 @@
         font-weight: 400;
         color: RGB(255, 255, 255);
     }
-    
+
     .Discoverrrtwo {
         width: 320px;
         height: 25px;
@@ -561,9 +564,9 @@
         font-size: 18px;
         font-weight: 400;
         color: RGB(255, 255, 255);
-    
+
     }
-    
+
     .Discoverrrthree {
         width: 320px;
         height: 25px;
@@ -575,7 +578,7 @@
         align-items: center;
         color: RGB(255, 255, 255);
     }
-    
+
     .recipecircletwoon {
         width: 100%;
         height: 110px;
@@ -583,7 +586,7 @@
         justify-content: center;
         padding: 0px 6px;
     }
-    
+
     .childrec {
         width: 560px;
         height: 100%;
@@ -594,12 +597,12 @@
         border-bottom: 0.5px solid whitesmoke;
         padding-left: 0px;
     }
-    
-    
+
+
     .childrec::-webkit-scrollbar {
         display: none;
     }
-    
+
     .recipystore {
         width: 100%;
         height: 40px;
@@ -608,7 +611,7 @@
         font-weight: 700;
         color: aliceblue;
     }
-    
+
     .recipystoreon {
         width: 100%;
         height: 570px;
@@ -621,7 +624,7 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
+
     .refreshdata {
         width: 100%;
         height: 70px;
@@ -629,7 +632,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .storerefresh {
         width: 200px;
         height: 100%;
@@ -648,22 +651,22 @@
         touch-action: manipulation;
         vertical-align: baseline;
     }
-    
+
     .storerefresh:hover {
         transform: translateY(-1px);
     }
-    
+
     .storerefresh:active {
         transform: translateY(0);
     }
-    
-    
+
+
     .refreshicon {
         color: whitesmoke;
         font-size: 26px;
         margin-right: 4px;
     }
-    
+
     .refreshname {
         font-size: 24px;
         color: whitesmoke;
