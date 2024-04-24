@@ -145,18 +145,18 @@ const App = () => {
           trigger: ".pagesixx",
         },
       });
-      // gsap.from(".Pageseven", {
-      //   y: 10,
-      //   duration: 1, // seconds
-      //   delay: 0.5,
-      //   opacity: 0,
-      //   stagger: 0.3,
-      //   z: -300,
-      //   ease: "power1.inOut",
-      //   scrollTrigger: {
-      //     trigger: ".Pageseven",
-      //   },
-      // });
+      gsap.from(".Pageseven", {
+        y: 10,
+        duration: 1, // seconds
+        delay: 0.5,
+        opacity: 0,
+        stagger: 0.3,
+        z: -300,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".Pageseven",
+        },
+      });
       // gsap.from(".Menume", {
       //   y: 10,
       //   duration: 1, // seconds
