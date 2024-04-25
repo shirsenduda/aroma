@@ -2,6 +2,7 @@
 import React from "react";
 import "./Recipe.css";
 import { useRef } from "react";
+import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -87,6 +88,7 @@ const Recipe = () => {
       namerecipetwooo: "with Cocoa",
     },
   ];
+  const locomotiveScroll = new LocomotiveScroll();
   // Gsap code write
   const container = useRef();
   gsap.registerPlugin(ScrollTrigger);

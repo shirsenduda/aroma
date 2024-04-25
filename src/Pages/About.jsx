@@ -3,6 +3,7 @@
 import React from "react";
 import Aboutme from "../component/Aboutme/Aboutme";
 import { useRef } from "react";
+import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,7 +12,7 @@ import Page2 from "../component/allpages/Page2/Pagetwo";
 import Cheaf from "../component/Cheaf/Cheaff";
 import Blogs from "../component/Blogs/Blog";
 const About = () => {
- 
+  const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const container = useRef();
   gsap.registerPlugin(ScrollTrigger);

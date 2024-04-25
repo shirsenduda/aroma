@@ -3,6 +3,7 @@
 import React from "react";
 import Menume from "../component/Menume/Menume";
 import { useRef } from "react";
+import LocomotiveScroll from "locomotive-scroll";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,6 +14,7 @@ import Productitem from "../component/Fooditems/Fooditem";
 import Page4 from "../component/allpages/Page4/Pagefour";
 import Pagethree from "../component/allpages/Page3/Pagethree";
 const About = () => {
+  const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const tll = gsap.timeline();
   const container = useRef();
