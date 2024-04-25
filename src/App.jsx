@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Appcss from "./App.module.css";
 import "remixicon/fonts/remixicon.css";
-import LocomotiveScroll from "locomotive-scroll";
+
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -18,7 +18,6 @@ import Scrolltop from "./component/Scrolltop/Scrolltop";
 //hello
 const App = () => {
   const [ramu, setramu] = useState("hi");
-  const locomotiveScroll = new LocomotiveScroll();
   const container = useRef();
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
@@ -179,7 +178,6 @@ const App = () => {
       <div className={Appcss.main} ref={container}>
         <Pageonee />
         <PageFour />
-       
         <Pagetwoo />
         <Pagefive />
         <Pagesix />

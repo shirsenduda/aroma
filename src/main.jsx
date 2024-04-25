@@ -13,12 +13,13 @@ import Menu from "./Pages/Menu";
 import Login from "./Pages/Login";
 import Cart from "./Pages/Cart";
 import Loader from "./Loader/Loader";
-import Recipe from './Pages/Recipe'
-
+import Recipe from "./Pages/Recipe";
+import LocomotiveScroll from "locomotive-scroll";
 // React router code
 // 🙂 Hope you Undestand this lines of code
 const Layout = () => {
   const [loadercondition, setloadercondition] = useState(true);
+  const locomotiveScroll = new LocomotiveScroll();
 
   useEffect(() => {
     setTimeout(() => {
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/aroma/Recipe",
-        element: <Recipe/>,
+        element: <Recipe />,
       },
       {
         path: "/aroma/Login",
