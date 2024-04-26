@@ -204,7 +204,7 @@ h4 {
 @media (min-width: 400px) and (max-width: 500px) {
     .secondpart {
         width: 100%;
-        height: 100vh;
+        height: 98vh;
         position: relative;
         padding: 0px 5px;
         border-top-left-radius: 20px;
@@ -347,7 +347,7 @@ h4 {
 @media (min-width: 300px) and (max-width: 400px) {
     .secondpart {
         width: 100%;
-        height: 100vh;
+        height: 98vh;
         position: relative;
         padding: 0px 5px;
         border-top-left-radius: 20px;
