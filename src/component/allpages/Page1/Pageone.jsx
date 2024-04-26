@@ -81,7 +81,7 @@ const Pageone = () => {
                   <h6 className="Fra">Frappuccino</h6>
 
                   <div className="offer1">
-                    <p className="fiftypercent">Up 50% Discount</p>
+                    <p className="fiftypercent"> Check Our Breakfast</p>
                   </div>
                   <div className="arroww">
                     <i className="ri-arrow-right-down-line"></i>

@@ -14,7 +14,6 @@ import PageFour from "./component/allpages/Page4/Pagefour";
 import Pagefive from "./component/allpages/Page5/Pagefive";
 import Pagesix from "./component/allpages/Page6/Pagesix";
 import Pageseven from "./component/allpages/Page7/Pageseven";
-import Scrolltop from "./component/Scrolltop/Scrolltop";
 //hello
 const App = () => {
   const [ramu, setramu] = useState("hi");
@@ -181,9 +180,9 @@ const App = () => {
         <PageFour />
        
         <Pagetwoo />
-        <Pagefive />
+        {/* <Pagefive /> */}
         <Pagesix />
-        <Pageseven />
+        {/* <Pageseven /> */}
       </div>
     </>
   );

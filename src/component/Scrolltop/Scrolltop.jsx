@@ -2,10 +2,10 @@
 import React from "react";
 import "./Scrolltop.css";
 const Scrolltop = () => {
-    const top = ()=>{
-        window.scrollTo(0,0);
-        
-    }
+  const top = () => {
+    window.scrollTo(0, 0);
+    
+  };
   return (
     <>
       <button className="topbt" onClick={top}>
