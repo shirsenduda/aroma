@@ -329,9 +329,7 @@
         position: relative;
         top: -58px;
     }
-    .parttwosecondonee{
-        display: none;
-    }
+    
     .parttwosecondone{
         width: 100%;
         height: 60px;
@@ -342,6 +340,7 @@
         transition: ease-out 0.5s;
         position: absolute;
         left: -30px;
+        display: block;
     }
     .parttwosecondone:hover {
         color: white; 
@@ -370,6 +369,49 @@
         transform: scale(0.9);
         transition: ease-out 0.5s;
       }
+      .parttwosecondonee{
+        width: 280px;
+        height: 110px;
+        padding: 0px 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 27%;
+        right: 82%;
+    }
+    .offer{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(60, 30, 24, 0.85);
+        border-radius: 10px;
+        padding: 20px 25px;
+        border: 1px solid #a8715c;
+        
+    }
+    .fiftypercent{
+        font-size: 19px;
+        color: #dabb9e;;
+        font-weight: 700;
+       padding-top: 9px;
+    }
+    .arroww{
+        width: 28px;
+        height: 28px;
+        font-size: 20px;
+        position: absolute;
+        top: 66%;
+        transform: translate(660%);
+        border-radius: 50%;
+        border: 0.5px solid #a8715c;
+        color: #dabb9e;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        padding: 3px;
+    }
+    .arroww:hover{
+        transition: all 0.4s ease-in-out;
+        color: #bea083;
+    }
     .parttwosecondthree{
         width: 100%;
         height: 60px;

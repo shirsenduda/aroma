@@ -391,6 +391,7 @@ h4 {
         position: absolute;
         left: -90%;
         top: 40%;
+        display: none;
     }
 
     .coffimg img {
