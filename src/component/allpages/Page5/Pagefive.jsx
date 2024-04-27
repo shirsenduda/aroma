@@ -1328,7 +1328,7 @@ const Pagefive = () => {
                       <div className="pname">
                         <img src="./img/veglog.png" alt="" />
                       </div>
-                      <div className="pnamee">Double Chocolate Chip</div>
+                      <div className="pnamee">Chocolate Chip</div>
                       <div className="pnamedesone">PER SERVE (80 g) - 385.3 Kcal</div>
                       <div className="pnamedestwo">
                       A soft & chewy chocolate cookie topped with chocolate chips ...
