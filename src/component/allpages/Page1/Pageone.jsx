@@ -8,7 +8,7 @@ import Coffeeicon from "../../Coffeeicon/Coffeeicon.jsx";
 import Write from "../../rotatecup/write.jsx";
 import "./secondpart.css";
 import "./thirdpart.css";
-
+import { Link } from "react-router-dom";
 const Pageone = () => {
   return (
     <>
@@ -70,7 +70,11 @@ const Pageone = () => {
               </div>
               <div className="parttwosecondonee">
                 <Coffeeicon />
-                <div className="offer">
+                
+                <Link to={"/aroma/Breakfast"} className="offer">
+              
+            
+                
                   <div className="circle4">
                     <img
                       src="https://images.unsplash.com/photo-1530373239216-42518e6b4063?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -86,7 +90,8 @@ const Pageone = () => {
                   <div className="arroww">
                     <i className="ri-arrow-right-down-line"></i>
                   </div>
-                </div>
+                
+                </Link>
               </div>
             </div>
             <div className="parttwothird">
@@ -94,11 +99,11 @@ const Pageone = () => {
                 <i className="ri-instagram-line"></i>
               </div>
               <a href="https://github.com/shirsenduda/aroma" className="aa">
-              <div className="parttwosecondtwo">
-              <i className="ri-github-fill"></i>
-              </div>
+                <div className="parttwosecondtwo">
+                  <i className="ri-github-fill"></i>
+                </div>
               </a>
-              
+
               <div className="parttwosecondthree">
                 <i className="ri-discord-fill"></i>
               </div>

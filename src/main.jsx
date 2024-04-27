@@ -14,7 +14,7 @@ import Login from "./Pages/Login";
 import Cart from "./Pages/Cart";
 import Loader from "./Loader/Loader";
 import Recipe from './Pages/Recipe'
-
+import Breakfast from "./Pages/Breakfast";
 // React router code
 // 🙂 Hope you Undestand this lines of code
 const Layout = () => {
@@ -71,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: "/aroma/Cart",
         element: <Cart />,
+      },
+      {
+        path: "/aroma/Breakfast",
+        element: <Breakfast />,
       },
     ],
   },

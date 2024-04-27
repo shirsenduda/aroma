@@ -120,18 +120,7 @@ const App = () => {
           trigger: ".Swipertwo",
         },
       });
-      gsap.from(".Product", {
-        y: 10,
-        duration: 1, // seconds
-        delay: 0.5,
-        opacity: 0,
-        stagger: 0.3,
-        z: -300,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: ".Product",
-        },
-      });
+      
       gsap.from(".pagesixx", {
         y: 10,
         duration: 1, // seconds

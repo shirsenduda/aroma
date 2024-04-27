@@ -10,6 +10,7 @@ import Recipescomponent from "../component/Recipescomponent/Recipescomponent";
 import Recipechangecircle from "../component/Recipechangecircle/Recipechangecircle";
 import Recipescomponenttwo from "../component/Recipescomponenttwo/Recipescomponenttwo";
 import Recipescomponentthree from "../component/Recipescomponentthree/Recipescomponentthree";
+import AdvatiseSectiont from "../component/AdvatiseSection two/AdvatiseSectiont";
 const Recipe = () => {
   const circleimgdata = [
     {
@@ -131,29 +132,10 @@ const Recipe = () => {
       <div className="Recipe" ref={container}>
         <div className="Recipemain">
           <div className="recipecircle">
-            <div className="recipeadv">
-              <img
-                src="https://images.unsplash.com/photo-1586558284960-362f8577f94d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
-              <div className="descc">
-                <h3 className="Discover">DISCOVER</h3>
-                <h1 className="Discoverr">Coffee Recipes</h1>
-                <div className="Discoverrr">
-                  <div className="Discoverrrone">
-                    From a classic latté to deliciously chilled smoothies, try
-                    making your
-                  </div>
-                  <div className="Discoverrrtwo">
-                    favorite Cold coffee recipes at home and share a snap of
-                    your
-                  </div>
-                  <div className="Discoverrrthree">
-                    creations using the hashtag #Aroma Recipes
-                  </div>
-                </div>
-              </div>
-            </div>
+            <AdvatiseSectiont
+              Recipee="Coffee Recipe"
+              recipeimg="https://images.unsplash.com/photo-1586558284960-362f8577f94d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
           </div>
           <div className="recipecircletwo">
             <div className="recipecircletwoon">
