@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
@@ -23,9 +24,9 @@ import Recipescomponentnonveg from "../component/Recipescomponentnonveg/Recipesc
 import Recipescomponentnonvegtwo from "../component/Recipescomponentnonvegtwo/Recipescomponentnonvegtwo";
 import Recipescomponentnonvegthree from "../component/Recipescomponentnonvegthree/Recipescomponentnonvegthree";
 import RecipescomponentDrinks from "../component/RecipescomponentDrinks/RecipescomponentDrinks";
-import RecipescomponentDrinkstwo from '../component/RecipescomponentDrinkstwo/RecipescomponentDrinkstwo'
-import RecipescomponentDrinksthree from '../component/RecipescomponentDrinksthree/RecipescomponentDrinksthree'
-const Recipe = ({ cart }) => {
+import RecipescomponentDrinkstwo from "../component/RecipescomponentDrinkstwo/RecipescomponentDrinkstwo";
+import RecipescomponentDrinksthree from "../component/RecipescomponentDrinksthree/RecipescomponentDrinksthree";
+const Recipe = ({ cart, setProgress }) => {
   const receipedata = [
     {
       key: 0,
@@ -460,6 +461,10 @@ const Recipe = ({ cart }) => {
   const call = renderconditionRec();
 
   useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
     console.log("Mountt");
   }, []);
 

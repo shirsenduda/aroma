@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import Loginn from "../component/Loginn/Login";
 import Coffeeicon from "../component/Coffeeicon/Coffeeicon";
 import { useRef } from "react";
@@ -11,11 +12,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Loginmain.css";
 import Navbar from "../component/Nav/Navbar";
 import Layout from "../component/Layout/Layout";
-const Login = ({ cart }) => {
+const Login = ({ cart, setProgress }) => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const tll = gsap.timeline();
   const container = useRef();
+
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+    console.log("Mountt");
+  }, []);
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     const tl = gsap.timeline();

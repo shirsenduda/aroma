@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Cart.css";
 import Addtocart from "../../component/addtocartbox/Addtocart";
 import Layout from "../../component/Layout/Layout";
@@ -18,7 +19,16 @@ const Cart = ({
   promocode,
   setpromocode,
   invalidstate,
+  setProgress
 }) => {
+  
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+    console.log("Mountt");
+  }, []);
   return (
     <Layout>
       <Navbar carticonnum={cartItem} Cart={cart} />

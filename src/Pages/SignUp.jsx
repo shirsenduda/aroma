@@ -1,6 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import Coffeeicon from "../component/Coffeeicon/Coffeeicon";
 import { useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
@@ -11,7 +13,15 @@ import "./Loginmain.css";
 import Navbar from "../component/Nav/Navbar";
 import Layout from "../component/Layout/Layout";
 import Signup from '../component/Sign-Up/Sign-Up'
-const Login = ({ cart }) => {
+const Login = ({ cart,setProgress }) => {
+  
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+    console.log("Mountt");
+  }, []);
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const tll = gsap.timeline();

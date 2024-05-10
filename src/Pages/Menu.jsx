@@ -1,6 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import Menume from "../component/Menume/Menume";
 import { useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
@@ -15,8 +18,15 @@ import Page4 from "../component/allpages/Page4/Pagefour";
 import Pagethree from "../component/allpages/Page3/Pagethree";
 import Layout from "../component/Layout/Layout";
 import Navbar from "../component/Nav/Navbar";
-const About = ({cart}) => {
+const About = ({ cart, setProgress }) => {
   const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+    console.log("Mountt");
+  }, []);
   const tl = gsap.timeline();
   const tll = gsap.timeline();
   const container = useRef();
@@ -27,6 +37,8 @@ const About = ({cart}) => {
     const tlll = gsap.timeline();
     const tllll = gsap.timeline();
     const tlllll = gsap.timeline();
+
+    
 
     // 🤓animation Part:-
     const animation = () => {
@@ -136,7 +148,7 @@ const About = ({cart}) => {
   });
   return (
     <Layout>
-      <Navbar Cart={cart}/>
+      <Navbar Cart={cart} />
       <div className="mainmenuuu" ref={container}>
         <Menume />
         <div className="secondmenuu">
@@ -146,7 +158,7 @@ const About = ({cart}) => {
           <Ourmenume />
         </div>
         <div className="thirdmenuu">
-          <Pagethree/>
+          <Pagethree />
         </div>
       </div>
     </Layout>

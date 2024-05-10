@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import Aboutme from "../component/Aboutme/Aboutme";
 import { useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
@@ -15,7 +17,7 @@ import Blogs from "../component/Blogs/Blog";
 import Layout from "../component/Layout/Layout";
 import Navbar from "../component/Nav/Navbar";
 
-const About = ({cart}) => {
+const About = ({cart,setProgress}) => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const container = useRef();
@@ -106,6 +108,14 @@ const About = ({cart}) => {
     };
     animation();
   });
+  
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+    console.log("Mountt");
+  }, []);
   // .aboutbox
   return (
     <Layout>

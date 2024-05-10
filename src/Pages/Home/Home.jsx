@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 // import React from 'react'
@@ -25,7 +26,7 @@ import "./thirdpart.css";
 import Navbar from "../../component/Nav/Navbar.jsx";
 import "remixicon/fonts/remixicon.css";
 import LocomotiveScroll from "locomotive-scroll";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -35,7 +36,7 @@ import { Link } from "react-router-dom";
 import Pagetwo from "../../component/allpages/Page2/Pagetwo.jsx";
 import Pagesix from "../../component/allpages/Page6/Pagesix.jsx";
 import "./recomendedsection.css";
-const Pageone = ({ Addtocarti, cart }) => {
+const Pageone = ({ Addtocarti, cart,setProgress }) => {
   const locomotiveScroll = new LocomotiveScroll();
   const container = useRef();
   gsap.registerPlugin(ScrollTrigger);
@@ -193,7 +194,13 @@ const Pageone = ({ Addtocarti, cart }) => {
     // call animaton function
     animation();
   });
-
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+    console.log("Mountt");
+  }, []);
   // Latest Offerings Data
   const Offering = [
     {

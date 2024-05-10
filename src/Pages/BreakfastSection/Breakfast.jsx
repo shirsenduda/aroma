@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Breakfast.css";
 import Pagefive from "../../component/allpages/Page5/Pagefive";
 import LocomotiveScroll from "locomotive-scroll";
@@ -11,7 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Layout from "../../component/Layout/Layout";
 import Navbar from "../../component/Nav/Navbar";
 
-const Breakfast = ({Addtocarti,cart}) => {
+const Breakfast = ({Addtocarti,cart,setProgress}) => {
   
   const locomotiveScroll = new LocomotiveScroll();
   const container = useRef();
@@ -64,7 +65,14 @@ const Breakfast = ({Addtocarti,cart}) => {
     animation();
     //
   });
-
+  
+  useEffect(() => {
+    setProgress(40);
+    setTimeout(() => {
+      setProgress(100);
+    }, 1000);
+    console.log("Mountt");
+  }, []);
   gsap.registerPlugin(ScrollTrigger);
   return (
     <Layout>

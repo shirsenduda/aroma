@@ -11,7 +11,7 @@ import Login from "./Pages/Login";
 import Recipe from "./Pages/Recipe";
 import Menu from "./Pages/Menu";
 import About from "./Pages/About";
-import SignUp from "./Pages/SignUp"
+import SignUp from "./Pages/SignUp";
 import LoadingBar from "react-top-loading-bar";
 
 // import Pageseven from "./component/allpages/Page7/Pageseven";
@@ -77,35 +77,40 @@ const App = () => {
     if (promocode === "DICOUNT10") {
       setdiscount(getTotal() * 0.1);
       setpromocode("");
-      setinvalidstate("")
+      setinvalidstate("");
     } else {
       setinvalidstate(invalidstate);
     }
   };
 
   // Top Loader
-  useEffect(() => {
-    setProgress(progress + 10);
-    setTimeout(() => {
-      setProgress(progress + 30);
-    }, 1000);
-    setTimeout(() => {
-      setProgress(1000);
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setProgress(progress + 10);
+  //   setTimeout(() => {
+  //     setProgress(progress + 30);
+  //   }, 1000);
+  //   setTimeout(() => {
+  //     setProgress(1000);
+  //   }, 2000);
+  // }, []);
 
   return (
     <>
       <div className={Appcss.main}>
-      <LoadingBar
+        
+
+        <BrowserRouter>
+        <LoadingBar
           color="#f4b84a"
           progress={progress}
           onLoaderFinished={() => setProgress(0)}
         />
-
-        <BrowserRouter>
           <Routes>
-            <Route path="/aroma/" element={<Home  Addtocarti={Addtocart}  cart={cartt.length} />} />
+            
+            <Route
+              path="/aroma/"
+              element={<Home setProgress={setProgress} Addtocarti={Addtocart} cart={cartt.length} />}
+            />
             <Route
               path="/aroma/Cart"
               element={
@@ -121,29 +126,30 @@ const App = () => {
                   setpromocode={setpromocode}
                   invalidstate={invalidstate}
                   validstate={validstate}
+                  setProgress={setProgress}
                 />
               }
             />
             <Route
               path="/aroma/Breakfast"
-              element={<Breakfast Addtocarti={Addtocart} cart={cartt.length} />}
+              element={<Breakfast setProgress={setProgress} Addtocarti={Addtocart} cart={cartt.length} />}
             />
             <Route
               path="/aroma/Login"
-              element={<Login cart={cartt.length} />}
+              element={<Login setProgress={setProgress} cart={cartt.length} />}
             />
             <Route
               path="/aroma/SignUp"
-              element={<SignUp cart={cartt.length} />}
+              element={<SignUp setProgress={setProgress} cart={cartt.length} />}
             />
             <Route
               path="/aroma/Recipe"
-              element={<Recipe cart={cartt.length} />}
+              element={<Recipe cart={cartt.length} setProgress={setProgress} />}
             />
-            <Route path="/aroma/Menu" element={<Menu cart={cartt.length} />} />
+            <Route path="/aroma/Menu" element={<Menu setProgress={setProgress} cart={cartt.length} />} />
             <Route
               path="/aroma/about"
-              element={<About cart={cartt.length} />}
+              element={<About cart={cartt.length} setProgress={setProgress} />}
             />
           </Routes>
         </BrowserRouter>
