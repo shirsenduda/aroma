@@ -13,6 +13,7 @@
 .partonenav {
   width: 92px;
   height: 85px;
+  position: relative;
 }
 
 .partonenav img {

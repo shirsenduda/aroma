@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from "react";
@@ -11,7 +12,10 @@ import "./Loginmain.css";
 import Page2 from "../component/allpages/Page2/Pagetwo";
 import Cheaf from "../component/Cheaf/Cheaff";
 import Blogs from "../component/Blogs/Blog";
-const About = () => {
+import Layout from "../component/Layout/Layout";
+import Navbar from "../component/Nav/Navbar";
+
+const About = ({cart}) => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const container = useRef();
@@ -104,7 +108,8 @@ const About = () => {
   });
   // .aboutbox
   return (
-    <>
+    <Layout>
+      <Navbar Cart={cart}/>
       <div className="aboutmainn" ref={container}>
         <div className="Logincs">
           <Aboutme />
@@ -124,7 +129,7 @@ const About = () => {
           <Blogs />
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

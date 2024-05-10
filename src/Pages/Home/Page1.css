@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.Pageone {
+    width: 100%;
+    padding-left: 0.1%;
+    padding-right: 0.1%;
+    padding-top: 0.1%;
+    overflow: hidden;
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .Pageone {
+        width: 100%;
+        padding-left: 0.1%;
+        padding-right: 0.1%;
+        padding-top: 0.1%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .Pageone {
+        width: 100%;
+        padding-left: 0.1%;
+        padding-right: 1%;
+        padding-top: 0.1%;
+
+    }
+}

@@ -3,7 +3,7 @@ const cartdataitems = [
         key : 0,
         productimg : "https://images.unsplash.com/photo-1587734361993-0033759da68b?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3",
         productname : "Black Coffee",
-        productdes : "lorem x,hj ghjmbgyu b",
+        productdes : "Rich in flavour, full-bodied espresso with hot water in true...",
         productprice : "$ 10",
     },
     
@@ -11,7 +11,7 @@ const cartdataitems = [
         key : 1,
         productimg : "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         productname : "Pan Cakes",
-        productdes : "lorem huin hiui ",
+        productdes : " We combine our rich in flavour, full-bodied espresso",
         productprice : "$ 12",
     },
     

@@ -1,0 +1,460 @@
+.cartmain {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartit {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    padding: 0% 4%;
+}
+
+.Shoppingtexx {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(214, 212, 212);
+    ;
+}
+
+/* items */
+.itemscart {
+    width: 90%;
+    height: 150px;
+    border-bottom: 0.5px solid #be9c79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 0px;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+
+.itemscart:hover {
+    width: 90%;
+    border-bottom: 0.5px solid #be9b7916;
+    height: 150px;
+    background-color: #be9b790e;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.4s ease-in-out;
+    padding: 8px 0px;
+}
+
+.itemimg {
+    width: 80px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.itemimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.itemdetail {
+    width: 300px;
+    height: 100%;
+    white-space: normal;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
+.itemplus {
+    width: 140px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.apply {
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    position: relative;
+    left: -128px;
+    border-radius: 5px;
+    background: #803D3B;
+    color: #fff;
+    border: 2.5px solid transparent;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.apply:hover {
+    background-color: #803D3B;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.apply:active {
+    transform: scale(0.95);
+}
+
+.itemplustw {
+    width: 140px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.deleteee {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    color: beige;
+}
+
+.deleteee:hover {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.deleteee:active {
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+
+}
+
+.itemname {
+    font-family: 'poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(214, 212, 212);
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemnamee {
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 540;
+    color: rgb(214, 212, 212);
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+p {
+    color: #d6bfab;
+}
+
+.itemsheasder {
+    width: 90%;
+    height: 80px;
+    border-bottom: 0.5px solid #be9c79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 0px;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.itemnumbers {
+    font-size: 16px;
+    color: rgb(214, 212, 212);
+    font-weight: 600;
+}
+
+.invalid {
+    font-size: 16px;
+    color: rgba(255, 0, 0, 0.523);
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 30px;
+}
+.invalidnon {
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 30px;
+}
+.invalidnonn {
+    font-size: 16px;
+    color: rgb(33, 158, 120);
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 30px;
+}
+
+@media (max-width : 500px) {
+    .itemsheasder {
+        width: 100%;
+        height: 80px;
+        border-bottom: 0.5px solid #be9c79;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 8px 5px;
+        margin-top: 10px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .itemnumbers {
+        font-size: 16px;
+        color: rgb(214, 212, 212);
+        ;
+        font-weight: 600;
+    }
+
+    /* items */
+    .itemscart {
+        width: 100%;
+        height: 190px;
+        border-bottom: 0.5px solid #be9b7961;
+        background-color: #be9b790e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 8px 1px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .itemscart:hover {
+        width: 100%;
+        height: 190px;
+        border-bottom: 0.5px solid #be9b7973;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 8px 1px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .itemimg {
+        width: 90px;
+        height: 80px;
+        border-radius: 8px;
+    }
+
+    .itemimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .itemdetail {
+        width: 300px;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 10px;
+    }
+
+    .itemplus {
+        width: 148.5px;
+        height: 100%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .itemname {
+        font-family: 'poppins', sans-serif;
+        font-size: 15.1px;
+        font-weight: 640;
+        color: rgb(214, 212, 212);
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .itemnamee {
+        font-family: 'poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 540;
+        color: rgb(214, 212, 212);
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    p {
+        color: #d6bfab;
+    }
+
+
+
+}
+
+@media (min-width: 400px) and (max-width : 500px) {
+    .Shoppingtexx {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(214, 212, 212);
+        ;
+    }
+
+    .apply {
+        width: fit-content;
+        min-width: 100px;
+        height: 45px;
+        padding: 8px;
+        position: relative;
+        left: -118px;
+        border-radius: 5px;
+        background: #803D3B;
+        color: #fff;
+        border: 2.5px solid transparent;
+        box-shadow: 0px 0px 20px -20px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out 0ms;
+        user-select: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .apply:hover {
+        background-color: #803D3B;
+        box-shadow: 0px 0px 20px -18px;
+    }
+
+    .apply:active {
+        transform: scale(0.95);
+    }
+
+    .cartmain {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cartit {
+        width: 100%;
+        height: 87vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18%;
+        padding: 0% 4%;
+    }
+}
+
+@media (min-width: 300px) and (max-width : 400px) {
+    .Shoppingtexx {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgb(214, 212, 212);
+        ;
+    }
+
+    .apply {
+        width: fit-content;
+        min-width: 100px;
+        height: 45px;
+        padding: 8px;
+        position: relative;
+        left: -90px;
+        border-radius: 5px;
+        background: #803D3B;
+        color: #fff;
+        border: 2.5px solid transparent;
+        box-shadow: 0px 0px 20px -20px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out 0ms;
+        user-select: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .apply:hover {
+        background-color: #803D3B;
+        box-shadow: 0px 0px 20px -18px;
+    }
+
+    .apply:active {
+        transform: scale(0.95);
+    }
+
+    .cartmain {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cartit {
+        width: 100%;
+        height: 87vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18%;
+        padding: 0% 4%;
+    }
+}

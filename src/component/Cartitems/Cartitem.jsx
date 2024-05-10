@@ -17,29 +17,9 @@ const Cartitem = () => {
   },[])
   return (
     <>
-      {cartdataitems.map((item,key) => (
-        <div className="itemscart" key={key}>
-          <div className="itemimg">
-            <img src={item.productimg} alt="" />
-          </div>
-          <div className="itemdetail">
-            <div className="itemname">{item.productname}</div>
-            <div className="itemname">{item.productdes}</div>
-            <div className="itemname">{item.productprice}</div>
-          </div>
-          <div className="itemplus">
-            <div className="itemplusleft">
-              <Muinus />
-            </div>
-            <div className="itemplusmid">
-              <p>{increment}</p>
-            </div>
-            <div className="itemplusright">
-              <Plus passchangenumber={changenumber} />
-            </div>
-          </div>
-        </div>
-      ))}
+      
+        
+      
     </>
   );
 };

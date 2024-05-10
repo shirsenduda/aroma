@@ -13,7 +13,9 @@ import Coffeeicon from "../component/Coffeeicon/Coffeeicon";
 import Productitem from "../component/Fooditems/Fooditem";
 import Page4 from "../component/allpages/Page4/Pagefour";
 import Pagethree from "../component/allpages/Page3/Pagethree";
-const About = () => {
+import Layout from "../component/Layout/Layout";
+import Navbar from "../component/Nav/Navbar";
+const About = ({cart}) => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const tll = gsap.timeline();
@@ -133,7 +135,8 @@ const About = () => {
     animation();
   });
   return (
-    <>
+    <Layout>
+      <Navbar Cart={cart}/>
       <div className="mainmenuuu" ref={container}>
         <Menume />
         <div className="secondmenuu">
@@ -146,7 +149,7 @@ const About = () => {
           <Pagethree/>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

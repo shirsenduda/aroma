@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./Plus.css";
-const Plus = ({passchangenumber}) => {
+const Plus = () => {
   return (
     <>
-      <div className="plus" >
+      <div className="plus">
         <div className="storeplus">
           <svg
             xmlns="http://www.w3.org/2000/svg"

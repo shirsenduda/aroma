@@ -6,82 +6,82 @@ import ReactDOM from "react-dom/client"; //Comes form node Modules
 import App from "../src/App";
 import "./index.css";
 import Navbar from "./component/Nav/Navbar";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+// import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Footer from "./component/Footer/Footer";
 import About from "./Pages/About";
 import Menu from "./Pages/Menu";
 import Login from "./Pages/Login";
-import Cart from "./Pages/Cart";
-import Loader from "./Loader/Loader";
-import Recipe from './Pages/Recipe'
-import Breakfast from "./Pages/Breakfast";
-// React router code
-// 🙂 Hope you Undestand this lines of code
-const Layout = () => {
-  const [loadercondition, setloadercondition] = useState(true);
+import Cart from "./Pages/CartSectionn/Cart";
+import Recipe from "./Pages/Recipe";
+import Breakfast from "./Pages/BreakfastSection/Breakfast";
+// // React router code
+// // 🙂 Hope you Undestand this lines of code
+// const Layout = () => {
+//   const [loadercondition, setloadercondition] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setloadercondition();
-    }, 1000);
-  }, []);
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setloadercondition();
+//     }, 1000);
+//   }, []);
 
-  const callLoader = Loader();
+//   const callLoader = Loader();
 
-  return (
-    <>
-      {loadercondition === true ? (
-        callLoader
-      ) : (
-        <>
-          <Navbar />
-          <Outlet />
-          <Footer />
-        </>
-      )}
-    </>
-  );
-};
+//   return (
+//     <>
+//       {loadercondition === true ? (
+//         callLoader
+//       ) : (
+//         <>
+//           <Navbar />
+//           <Outlet />
+//           <Footer />
+//         </>
+//       )}
+//     </>
+//   );
+// };
 
-const router = createBrowserRouter([
-  {
-    path: "/aroma/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/aroma/",
-        element: <App />,
-      },
-      {
-        path: "/aroma/about",
-        element: <About />,
-      },
-      {
-        path: "/aroma/Menu",
-        element: <Menu />,
-      },
-      {
-        path: "/aroma/Recipe",
-        element: <Recipe/>,
-      },
-      {
-        path: "/aroma/Login",
-        element: <Login />,
-      },
-      {
-        path: "/aroma/Cart",
-        element: <Cart />,
-      },
-      {
-        path: "/aroma/Breakfast",
-        element: <Breakfast />,
-      },
-    ],
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/aroma/",
+//     element: <Layout />,
+//     children: [
+//       {
+//         path: "/aroma/",
+//         element: <App />,
+//       },
+//       {
+//         path: "/aroma/about",
+//         element: <About />,
+//       },
+//       {
+//         path: "/aroma/Menu",
+//         element: <Menu />,
+//       },
+//       {
+//         path: "/aroma/Recipe",
+//         element: <Recipe />,
+//       },
+//       {
+//         path: "/aroma/Login",
+//         element: <Login />,
+//       },
+//       {
+//         path: "/aroma/Cart",
+//         element: <Cart />,
+//       },
+//       {
+//         path: "/aroma/Breakfast",
+//         element: <Breakfast />,
+//       },
+//     ],
+//   },
+// ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <NextUIProvider>
-    <RouterProvider router={router} />
+    <App />
   </NextUIProvider>
+  // router={router}
 );
