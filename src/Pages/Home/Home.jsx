@@ -327,7 +327,7 @@ const Pageone = ({ Addtocarti, cart }) => {
         </div>
         <div className="recomendedsection">
           <div className="partonereco">
-            <div className="barista">Latest Offerings</div>
+            <div className="barista">Latest Offers</div>
             <div className="baristas">
               <div className="Viewme"> View Menu</div>
               <div className="baristasimg">
