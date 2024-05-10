@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Loginn from "../component/Loginn/Login";
 import Coffeeicon from "../component/Coffeeicon/Coffeeicon";
 import { useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
@@ -11,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Loginmain.css";
 import Navbar from "../component/Nav/Navbar";
 import Layout from "../component/Layout/Layout";
+import Signup from '../component/Sign-Up/Sign-Up'
 const Login = ({ cart }) => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
@@ -58,7 +58,7 @@ const Login = ({ cart }) => {
       <div className="Logincs" ref={container}>
         <div className="logincstw">
           <Coffeeicon />
-          <Loginn />
+          <Signup/>
           <Coffeeicon />
         </div>
       </div>

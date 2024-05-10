@@ -1,18 +1,22 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import "./Login.css";
+import "./Sign-Up.css";
 import Button from "../Buttons/Button";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const [username, setusername] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const FormHandler = (e) => {
-    if (e.target.id === "username") {
+    if (e.target.id === "email") {
       setemail(e.target.value);
       console.log(e.target.value);
     } else if (e.target.id === "password") {
       setpassword(e.target.value);
+      console.log(e.target.value);
+    }else{
+      setusername(e.target.value);
       console.log(e.target.value);
     }
   };
@@ -20,14 +24,26 @@ const Login = () => {
     <>
       <div className="login-container">
         <form className="login-form">
-          <p className="heading">Login</p>
-          <p className="paragraph">Login to your account</p>
+          <p className="heading">Sign-Up</p>
+          <p className="paragraph">Sign to your account</p>
           <div className="input-group">
             <input
               onChange={FormHandler}
               required=""
               placeholder="Username"
               id="username"
+              type="text"
+              value={username}
+
+            />
+          </div>
+          <div className="input-group">
+            <input
+              onChange={FormHandler}
+              required=""
+              placeholder="Email"
+              name="Email"
+              id="email"
               type="text"
               value={email}
             />
@@ -40,16 +56,16 @@ const Login = () => {
               name="password"
               id="password"
               type="password"
+              value={password}
             />
           </div>
-          {/* <button type="submit">Login</button> */}
-          <button className="signin">Login</button>
+          <button className="signin">Sign-Up</button>
 
           <div className="bottom-text">
             <p>
-              No account?
-              <Link to={"/aroma/SignUp"} className="a">
-                Sign Up
+              account?
+              <Link to={"/aroma/Login"} className="a">
+                Login
               </Link>
             </p>
             <p>

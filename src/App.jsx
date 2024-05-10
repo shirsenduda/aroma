@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
@@ -10,14 +11,20 @@ import Login from "./Pages/Login";
 import Recipe from "./Pages/Recipe";
 import Menu from "./Pages/Menu";
 import About from "./Pages/About";
+import SignUp from "./Pages/SignUp"
+import LoadingBar from "react-top-loading-bar";
+
 // import Pageseven from "./component/allpages/Page7/Pageseven";
 //hello
 const App = () => {
   const [ramu, setramu] = useState("hi");
   const [cartt, setcart] = useState([]);
   const [invalidstate, setinvalidstate] = useState("INVALID PROMOCODE");
+  const [validstate, setvalidstate] = useState("VALID PROMOCODE");
   const [promocode, setpromocode] = useState("");
   const [discount, setdiscount] = useState(0);
+  const [progress, setProgress] = useState(0);
+
   const Addtocart = (prod) => {
     const isProductExist = cartt.find((findItem) => findItem.key === prod.key);
     if (isProductExist) {
@@ -70,14 +77,32 @@ const App = () => {
     if (promocode === "DICOUNT10") {
       setdiscount(getTotal() * 0.1);
       setpromocode("");
+      setinvalidstate("")
     } else {
       setinvalidstate(invalidstate);
     }
   };
 
+  // Top Loader
+  useEffect(() => {
+    setProgress(progress + 10);
+    setTimeout(() => {
+      setProgress(progress + 30);
+    }, 1000);
+    setTimeout(() => {
+      setProgress(1000);
+    }, 2000);
+  }, []);
+
   return (
     <>
       <div className={Appcss.main}>
+      <LoadingBar
+          color="#f4b84a"
+          progress={progress}
+          onLoaderFinished={() => setProgress(0)}
+        />
+
         <BrowserRouter>
           <Routes>
             <Route path="/aroma/" element={<Home  Addtocarti={Addtocart}  cart={cartt.length} />} />
@@ -95,6 +120,7 @@ const App = () => {
                   promocode={promocode}
                   setpromocode={setpromocode}
                   invalidstate={invalidstate}
+                  validstate={validstate}
                 />
               }
             />
@@ -105,6 +131,10 @@ const App = () => {
             <Route
               path="/aroma/Login"
               element={<Login cart={cartt.length} />}
+            />
+            <Route
+              path="/aroma/SignUp"
+              element={<SignUp cart={cartt.length} />}
             />
             <Route
               path="/aroma/Recipe"
