@@ -76,6 +76,9 @@ const Login = ({ cart, setProgress, userName }) => {
     console.log(UserSignUp);
   };
 
+  const delay = (ms) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  };
   const handleSumbit = (e) => {
     e.preventDefault();
     if (!UserSignUp.email || !UserSignUp.password) {
@@ -86,6 +89,12 @@ const Login = ({ cart, setProgress, userName }) => {
         .then((res) => {
           navigateHome("/aroma/Home");
           return toast.success("Login Successfull");
+        })
+        .then((res) => {
+          navigateHome("/aroma/Home");
+          return delay(3000).then(() => {
+            toast.success("Please reloade the page");
+          });
         })
         .catch((err) => toast.error(err.message));
     }
