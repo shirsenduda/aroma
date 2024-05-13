@@ -48,6 +48,16 @@ const Navbar = ({ Cart, userNami }) => {
         toast.error(error);
       });
   };
+  const handleLoginpage = () => {
+    auth
+      .signOut()
+      .then(() => {
+        // toast.success("Logout Successfully");
+      })
+      .catch((error) => {
+        // toast.error(error);
+      });
+  };
 
   // Profile Popup
   const [isOpen, setIsOpen] = useState(true);
@@ -232,97 +242,8 @@ const Navbar = ({ Cart, userNami }) => {
           </h3>
         </div>
         <div className="bttstore">
-          {/* {userNami ? (
-            <>
-              <div className="dropdiv">
-                <button
-                  className="buttonnav"
-                  id="buttonid"
-                  onClick={toggleMenu}
-                >
-                  <div className="profileico">
-                    <i className="ri-user-3-fill"></i>
-                  </div>
-                  <div className="profilenami">
-                    <span>{userNami}</span>
-                  </div>
-                  <div className="profilenami">
-                    <i className="ri-arrow-down-s-line"></i>
-                  </div>
-                </button>
-                {isOpen === true ? (
-                  <div className="popupnew"></div>
-                ) : (
-                  <div className="popupnewopen" >
-                    <svg
-                      className="logouticonn"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                    >
-                      <path d="M18.189 9a15 15 0 0 1 2.654 2.556c.105.13.157.287.157.444m-2.811 3a14.998 14.998 0 0 0 2.654-2.556A.704.704 0 0 0 21 12m0 0H8m5-7.472A6 6 0 0 0 3 9v6a6 6 0 0 0 10 4.472"></path>
-                    </svg>
-
-                    <span>Log-out</span>
-                  </div>
-                )}
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="dropdiv">
-                <button
-                  className="buttonnav"
-                  id="buttonid"
-                  onClick={toggleMenu}
-                >
-                  <div className="profileico">
-                    <i className="ri-user-3-fill"></i>
-                  </div>
-                  <div className="profilenami">
-                    <span></span>
-                  </div>
-                  <div className="profilenami">
-                    <i className="ri-arrow-down-s-line"></i>
-                  </div>
-                </button>
-                {isOpen === true ? (
-                  <div className="popupnew"></div>
-                ) : (
-                  <Link to={"/aroma/"} className="Li">
-                    <div className="popupnewopen">
-                      <svg
-                        className="logouticonn"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      >
-                        <path d="M18.189 9a15 15 0 0 1 2.654 2.556c.105.13.157.287.157.444m-2.811 3a14.998 14.998 0 0 0 2.654-2.556A.704.704 0 0 0 21 12m0 0H8m5-7.472A6 6 0 0 0 3 9v6a6 6 0 0 0 10 4.472"></path>
-                      </svg>
-
-                      <span>Log-in</span>
-                    </div>
-                  </Link>
-                )}
-              </div>
-            </>
-          )} */}
-          {/* <Link to={"/aroma/Login"} className="Li" onClick={togglefunction}>
-            <Buttontw login="Login" />
-          </Link>
-          <Buttontw sign="Sign-up" /> */}
+        {userNami ? (<>
           <button className="getstart">
-            {/* <div className="profileico">
-              <i className="ri-user-3-fill"></i>
-            </div> */}
             <div className="profileicoside">
               <div className="sideprofileicon">
                 <i className="ri-user-3-fill proff"></i>
@@ -348,6 +269,36 @@ const Navbar = ({ Cart, userNami }) => {
               <span>Log-out</span>
             </button>
           </Link>
+        </>):(<>
+          <button className="getstart">
+            <div className="profileicoside">
+              <div className="sideprofileicon">
+                <i className="ri-user-3-fill proff"></i>
+              </div>
+              <div className="sideprofileiconn">{userNami}</div>
+            </div>
+          </button>
+          <Link to={"/aroma/"} className="Li">
+            <button className="getstart" onClick={handleLoginpage}>
+              <svg
+                className="logouticonn"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              >
+                <path d="M18.189 9a15 15 0 0 1 2.654 2.556c.105.13.157.287.157.444m-2.811 3a14.998 14.998 0 0 0 2.654-2.556A.704.704 0 0 0 21 12m0 0H8m5-7.472A6 6 0 0 0 3 9v6a6 6 0 0 0 10 4.472"></path>
+              </svg>
+
+              <span>Log-in</span>
+            </button>
+          </Link>
+        </>)}
+
+          
         </div>
       </div>
     </>
