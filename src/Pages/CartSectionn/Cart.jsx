@@ -19,9 +19,9 @@ const Cart = ({
   promocode,
   setpromocode,
   invalidstate,
-  setProgress
+  setProgress,
+  userName
 }) => {
-  
   useEffect(() => {
     setProgress(40);
     setTimeout(() => {
@@ -31,7 +31,7 @@ const Cart = ({
   }, []);
   return (
     <Layout>
-      <Navbar carticonnum={cartItem} Cart={cart} />
+      <Navbar userNami={userName} carticonnum={cartItem} Cart={cart} />
       <div className="cartmain">
         <div className="cartit">
           {/* <Addtocart cartmaindataa={cartItem}/> */}
@@ -134,7 +134,9 @@ const Cart = ({
                   ) : (
                     <span className="invalidnon">Use DICOUNT10</span>
                   )}
-
+                  {/* {promocode==="DISCOUNT10" && (
+                    <span className="invalidnon">Use </span>
+                  )} */}
                   {/* {promocode && promocode !== "DICOUNT10" ? (
                   ) : (
                     <span className="invalidnon">Use DISCOUNT10</span>

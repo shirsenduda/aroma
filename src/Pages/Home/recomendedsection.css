@@ -10,6 +10,18 @@
     background-color: #36100427;
 
 }
+.recomendedsectionoffer {
+    width: 100%;
+    height: 410px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #36100427;
+
+}
 
 .partonereco {
     width: 100%;

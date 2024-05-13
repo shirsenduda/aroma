@@ -12,7 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Layout from "../../component/Layout/Layout";
 import Navbar from "../../component/Nav/Navbar";
 
-const Breakfast = ({Addtocarti,cart,setProgress}) => {
+const Breakfast = ({Addtocarti,cart,setProgress,userName}) => {
   
   const locomotiveScroll = new LocomotiveScroll();
   const container = useRef();
@@ -76,7 +76,7 @@ const Breakfast = ({Addtocarti,cart,setProgress}) => {
   gsap.registerPlugin(ScrollTrigger);
   return (
     <Layout>
-      <Navbar Cart={cart}/>
+      <Navbar userNami={userName} Cart={cart}/>
       <div className="Breakfast" ref={container}>
         <div className="Breakfastchild">
           <div className="bannerbreak">

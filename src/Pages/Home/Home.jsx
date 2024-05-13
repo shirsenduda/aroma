@@ -1,18 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-// import React from 'react'
-// const Home = () => {
-//   return (
-
-//     <Layout>
-//       <Pageone/>
-//     </Layout>
-
-//   )
-// }
-
-// export default Home
 
 /* eslint-disable no-unused-vars */
 
@@ -35,8 +23,9 @@ import Footer from "../../component/Footer/Footer.jsx";
 import { Link } from "react-router-dom";
 import Pagetwo from "../../component/allpages/Page2/Pagetwo.jsx";
 import Pagesix from "../../component/allpages/Page6/Pagesix.jsx";
+import Offersection from "../../component/Offersection/Offer.jsx";
 import "./recomendedsection.css";
-const Pageone = ({ Addtocarti, cart,setProgress }) => {
+const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
   const locomotiveScroll = new LocomotiveScroll();
   const container = useRef();
   gsap.registerPlugin(ScrollTrigger);
@@ -240,7 +229,7 @@ const Pageone = ({ Addtocarti, cart,setProgress }) => {
     <Layout>
       <div className="Pageone" ref={container}>
         <div className="secondpart">
-          <Navbar Cart={cart} />
+          <Navbar Cart={cart} userNami={userName} />
           <img src="./img/Group 21.png" alt="" />
           <div className="partone">
             <Coffeeicon />
@@ -358,7 +347,7 @@ const Pageone = ({ Addtocarti, cart,setProgress }) => {
 
                   <p className="dsc">{item.ProductDescription}</p>
                   <span className="rupe">$ {item.ProductPrice}</span>
-                  <a className="acion" onClick={() => Addtocarti (item)}>
+                  <a className="acion" onClick={() => Addtocarti(item)}>
                     Add item
                     <span aria-hidden="true">→</span>
                   </a>
@@ -367,7 +356,9 @@ const Pageone = ({ Addtocarti, cart,setProgress }) => {
             ))}
           </div>
         </div>
-
+        {/* <div className="recomendedsectionoffer">
+          <Offersection/>
+        </div> */}
         <Page4 />
         <Pagetwo />
         <Pagesix />

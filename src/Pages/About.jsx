@@ -17,7 +17,7 @@ import Blogs from "../component/Blogs/Blog";
 import Layout from "../component/Layout/Layout";
 import Navbar from "../component/Nav/Navbar";
 
-const About = ({cart,setProgress}) => {
+const About = ({ cart, setProgress, userName }) => {
   const locomotiveScroll = new LocomotiveScroll();
   const tl = gsap.timeline();
   const container = useRef();
@@ -108,7 +108,7 @@ const About = ({cart,setProgress}) => {
     };
     animation();
   });
-  
+
   useEffect(() => {
     setProgress(40);
     setTimeout(() => {
@@ -119,7 +119,7 @@ const About = ({cart,setProgress}) => {
   // .aboutbox
   return (
     <Layout>
-      <Navbar Cart={cart}/>
+      <Navbar userNami={userName} Cart={cart} />
       <div className="aboutmainn" ref={container}>
         <div className="Logincs">
           <Aboutme />

@@ -6,7 +6,7 @@ const Hamburger = ({togle}) => {
   return (
     <>
     
-    <div className="burger" onClick={togle}>
+    <div className="burgerham" onClick={togle}>
     <i className="ri-menu-2-line"></i>
     {/* <i className="ri-menu-4-line"></i> */}
     </div>

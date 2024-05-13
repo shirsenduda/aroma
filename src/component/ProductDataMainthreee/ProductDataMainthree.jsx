@@ -17,7 +17,7 @@ const ProductDataMainthree = [
         ProductDescription:
           "Freshly Assembled Sandwich Masala chicken tikka with tomato ...",
         ProductML: "290g/901kcal.",
-        ProductPrice: " 8o ",
+        ProductPrice: " 80 ",
       },
       {
         key : 14,

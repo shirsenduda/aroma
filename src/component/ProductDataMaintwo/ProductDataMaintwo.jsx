@@ -16,7 +16,7 @@ const ProductDataMain = [
     key : 1,
     Productimage:
       "https://starbucksstatic.cognizantorderserv.com/Items/Large/webP/113842.webp",
-    ProductName: "Belgium Chocolate",
+    ProductName: "Hot Chocolate",
     ProductDescription:
       "Espresso with decadent Belgian chocolate sauce, mocha sauce ...",
     ProductML: "SHORT(237 ML) .235 Kcal",
@@ -36,7 +36,7 @@ const ProductDataMain = [
     key : 3,
     Productimage:
       "https://starbucksstatic.cognizantorderserv.com/Items/Small/107934.jpg",
-    ProductName: "Chocolate Cortado",
+    ProductName: "Choco Cortado",
     ProductDescription:
       "A perfect espresso shot and mocha sauce, topped with steamed...",
     ProductML: "PER SERVE (120 ML) - 88 Kcal",

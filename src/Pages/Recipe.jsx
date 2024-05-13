@@ -26,7 +26,7 @@ import Recipescomponentnonvegthree from "../component/Recipescomponentnonvegthre
 import RecipescomponentDrinks from "../component/RecipescomponentDrinks/RecipescomponentDrinks";
 import RecipescomponentDrinkstwo from "../component/RecipescomponentDrinkstwo/RecipescomponentDrinkstwo";
 import RecipescomponentDrinksthree from "../component/RecipescomponentDrinksthree/RecipescomponentDrinksthree";
-const Recipe = ({ cart, setProgress }) => {
+const Recipe = ({ cart, setProgress,userName }) => {
   const receipedata = [
     {
       key: 0,
@@ -470,7 +470,7 @@ const Recipe = ({ cart, setProgress }) => {
 
   return (
     <Layout>
-      <Navbar Cart={cart} />
+      <Navbar userNami={userName} Cart={cart} />
       <div className="Recipe" ref={container}>
         <div className="Recipemain">
           <div className="recipecircle">

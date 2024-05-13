@@ -18,7 +18,7 @@ import Page4 from "../component/allpages/Page4/Pagefour";
 import Pagethree from "../component/allpages/Page3/Pagethree";
 import Layout from "../component/Layout/Layout";
 import Navbar from "../component/Nav/Navbar";
-const About = ({ cart, setProgress }) => {
+const About = ({ cart, setProgress, userName }) => {
   const locomotiveScroll = new LocomotiveScroll();
   useEffect(() => {
     setProgress(40);
@@ -37,8 +37,6 @@ const About = ({ cart, setProgress }) => {
     const tlll = gsap.timeline();
     const tllll = gsap.timeline();
     const tlllll = gsap.timeline();
-
-    
 
     // 🤓animation Part:-
     const animation = () => {
@@ -148,7 +146,7 @@ const About = ({ cart, setProgress }) => {
   });
   return (
     <Layout>
-      <Navbar Cart={cart} />
+      <Navbar userNami={userName} Cart={cart} />
       <div className="mainmenuuu" ref={container}>
         <Menume />
         <div className="secondmenuu">

@@ -1,4 +1,4 @@
-.burger {
+.burgerham {
   background-color: transparent;
   position: relative;
   width: 50px;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width : 500px) {
-  .burger {
+  .burgerham {
     background-color: transparent;
     position: relative;
     cursor: pointer;
@@ -19,11 +19,11 @@
     margin-bottom: 10px;
   }
 
-  .burger:active {
+  .burgerham:active {
     transform: scale(0.9);
   }
 
-  .burger span {
+  .burgerham span {
     display: block;
     position: absolute;
     height: 4px;
@@ -36,22 +36,22 @@
     transition: .25s ease-in-out;
   }
 
-  .burger span:nth-of-type(1) {
+  .burgerham span:nth-of-type(1) {
     top: 0px;
     transform-origin: left center;
     height: 3px;
 
   }
 
-  .burger span2 {
+  .burgerham span2 {
     transform: translateY(0%) rotate(46.5deg);
   }
 
-  .burgeractione {
+  .burgerhamactione {
     transform: translateY(0%) rotate(40.5deg);
   }
 
-  .burger span:nth-of-type(2) {
+  .burgerham span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left center;
@@ -59,7 +59,7 @@
     height: 3px;
   }
 
-  .burger span2 {
+  .burgerham span2 {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left center;
@@ -68,14 +68,14 @@
     opacity: 0;
   }
 
-  .burger span:nth-of-type(3) {
+  .burgerham span:nth-of-type(3) {
     top: 100%;
     height: 3px;
     transform-origin: left center;
     transform: translateY(-100%);
   }
 
-  .burger span3 {
+  .burgerham span3 {
     top: 100%;
     height: 3px;
     transform-origin: left center;
@@ -86,7 +86,7 @@
 
 /* @media (min-width: 720px) and (max-width : 920px) {
 
-  .burger {
+  .burgerham {
     background-color: transparent;
     position: relative;
     width: 35px;
@@ -97,11 +97,11 @@
     top: 4px;
   }
 
-  .burger:active {
+  .burgerham:active {
     transform: scale(0.9);
   }
 
-  .burger span {
+  .burgerham span {
     display: block;
     position: absolute;
     height: 4px;
@@ -114,22 +114,22 @@
     transition: .25s ease-in-out;
   }
 
-  .burger span:nth-of-type(1) {
+  .burgerham span:nth-of-type(1) {
     top: 0px;
     transform-origin: left center;
     height: 3px;
 
   }
 
-  .burger span2 {
+  .burgerham span2 {
     transform: translateY(0%) rotate(46.5deg);
   }
 
-  .burgeractione {
+  .burgerhamactione {
     transform: translateY(0%) rotate(40.5deg);
   }
 
-  .burger span:nth-of-type(2) {
+  .burgerham span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left center;
@@ -137,7 +137,7 @@
     height: 3px;
   }
 
-  .burger span2 {
+  .burgerham span2 {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left center;
@@ -146,14 +146,14 @@
     opacity: 0;
   }
 
-  .burger span:nth-of-type(3) {
+  .burgerham span:nth-of-type(3) {
     top: 100%;
     height: 3px;
     transform-origin: left center;
     transform: translateY(-100%);
   }
 
-  .burger span3 {
+  .burgerham span3 {
     top: 100%;
     height: 3px;
     transform-origin: left center;

@@ -4,7 +4,11 @@
     padding: 8px 13.3px;
     text-align: center;
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     letter-spacing: 1px;
     text-decoration: none;
     color: #F8E4BE;

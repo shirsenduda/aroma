@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Coffeeicon from "../component/Coffeeicon/Coffeeicon";
 import { useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
@@ -12,9 +12,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Loginmain.css";
 import Navbar from "../component/Nav/Navbar";
 import Layout from "../component/Layout/Layout";
-import Signup from '../component/Sign-Up/Sign-Up'
-const Login = ({ cart,setProgress }) => {
-  
+// import Signup from '../component/Sign-Up/Sign-Up'
+import { Link, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { auth } from "../FirebaseAuth/FirebaseAuth";
+
+
+const SighUp = ({ cart, setProgress, userName }) => {
+  const navigateLogin = useNavigate();
   useEffect(() => {
     setProgress(40);
     setTimeout(() => {
@@ -62,13 +68,103 @@ const Login = ({ cart,setProgress }) => {
     };
     animation();
   });
+
+  // userSighup State
+  const [UserSignUp, setUserSignUp] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+  const FormHandler = (e) => {
+    setUserSignUp({ ...UserSignUp, [e.target.id]: e.target.value });
+    console.log(UserSignUp);
+  };
+
+  const handleSumbit = (e) => {
+    e.preventDefault();
+    if (!UserSignUp.username || !UserSignUp.email || !UserSignUp.password) {
+      // alert("Fill all field");
+      return toast.error("All Field are require");
+    } else {
+      createUserWithEmailAndPassword(
+        auth,
+        UserSignUp.email,
+        UserSignUp.password
+      )
+        .then(async (res) => {
+          const user = res.user;
+          await updateProfile(user, {
+            displayName: UserSignUp.username,
+          });
+
+          navigateLogin("/aroma/");
+        })
+        .catch((err) => toast.error(err.message));
+    }
+  };
   return (
     <Layout>
       <Navbar Cart={cart} />
       <div className="Logincs" ref={container}>
         <div className="logincstw">
           <Coffeeicon />
-          <Signup/>
+          {/* <Signup/> */}
+          <div className="login-container">
+            <form className="login-form">
+              <p className="heading">Sign-Up</p>
+              <p className="paragraph">Sign to your account</p>
+              <div className="input-group">
+                <input
+                  autoComplete="off"
+                  onChange={FormHandler}
+                  required=""
+                  placeholder="Username"
+                  id="username"
+                  type="text"
+                  value={UserSignUp.username}
+                />
+              </div>
+              <div className="input-group">
+                <input
+                  autoComplete="off"
+                  onChange={FormHandler}
+                  required=""
+                  placeholder="Email"
+                  name="Email"
+                  id="email"
+                  type="text"
+                  value={UserSignUp.email}
+                />
+              </div>
+              <div className="input-group">
+                <input
+                  autoComplete="off"
+                  onChange={FormHandler}
+                  required=""
+                  placeholder="Password"
+                  name="password"
+                  id="password"
+                  type="text"
+                  value={UserSignUp.password}
+                />
+              </div>
+              <button className="signin" onClick={handleSumbit}>
+                Sign-Up
+              </button>
+
+              <div className="bottom-text">
+                <p>
+                  account?
+                  <Link to={"/aroma/"} className="a">
+                    Login
+                  </Link>
+                </p>
+                <p>
+                  <a href="#">Forgot password?</a>
+                </p>
+              </div>
+            </form>
+          </div>
           <Coffeeicon />
         </div>
       </div>
@@ -76,4 +172,4 @@ const Login = ({ cart,setProgress }) => {
   );
 };
 
-export default Login;
+export default SighUp;

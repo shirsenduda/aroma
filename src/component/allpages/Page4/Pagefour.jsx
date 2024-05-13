@@ -11,24 +11,24 @@ import Servicesfive from "../../allServices/servifive/Servicesfive";
 const Page4 = () => {
   const servicedata = [
     {
-      id:0,
+      key:0,
       servicedataimg : "./img/serone.svg",
       servicedatatext : "Vending Machine",
     },
     {
-      id:1,
+      key:1,
       servicedataimg : "./img/sertwo.svg",
       servicedatatext : "Take A Way",
     },
   ]
   const servicedatatwo = [
     {
-      id:3,
+      key:3,
       servicedataimgtwo : "./img/serthree.svg",
       servicedatatexttwo : "Type of Coffee",
     },
     {
-      id:4,
+      key:4,
       servicedataimgtwo : "./img/serfour.svg",
       servicedatatexttwo : "Beans Variant",
     },
@@ -36,7 +36,7 @@ const Page4 = () => {
   ]
   const servicedatathree = [
     {
-      id:5,
+      key:5,
       servicedataimgthree : "./img/serfive.svg",
       servicedatatextthree : "Pastry",
     },
