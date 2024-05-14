@@ -254,7 +254,7 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
       ProductML: "160gm/130 kcal",
       ProductDescription:
         "A delicious double layered hot sandwitch grilled with ginger ale. A pure veg for...",
-      ProductPrice: "18",
+      ProductPrice: "8",
     },
     {
       key: 25,
