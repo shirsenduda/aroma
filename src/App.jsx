@@ -51,7 +51,7 @@ const App = () => {
     setcart(increaseQuantity);
   };
 
-  // Decrease quantity
+  // Decrease quantityy
 
   const handleDec = (key) => {
     const decreaseQuantity = cartt.map((i) =>
