@@ -37,7 +37,7 @@ const App = () => {
       setcart(upDateCart);
     } else {
       setcart([...cartt, { ...prod, quantity: 1 }]);
-      toast.success("Product Addded To Cart");
+      toast.success("Product Added To Cart");
     }
 
     console.log(cartt);

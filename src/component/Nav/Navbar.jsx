@@ -18,10 +18,13 @@ const Navbar = ({ Cart, userNami }) => {
   const [bt, setbt] = useState("Login");
   const [btt, setbtt] = useState("Sign-Up");
   const [Slide, setSlide] = useState(true);
+  const [searchtog, setsearchtog] = useState(true);
   const togglefunction = () => {
     setSlide((item) => !item);
   };
-
+  const toglesearch = () => {
+    setsearchtog((item) => !item);
+  };
   const dropfunction = () => {
     window.scroll({
       top: 0,
@@ -74,31 +77,49 @@ const Navbar = ({ Cart, userNami }) => {
         <div className="partonenav">
           <img src="./img/Logootw.png" alt="" />
         </div>
-        <div className="parttwonav">
-          <h3 className="item">
-            <Link to={"/aroma/Home"} className="Li">
-              Home
-            </Link>
-          </h3>
+        {searchtog === true ? (
+          <>
+            <div className="parttwonav">
+              <h3 className="item">
+                <Link to={"/aroma/Home"} className="Li">
+                  Home
+                </Link>
+              </h3>
 
-          <h3 className="item">
-            <Link to={"/aroma/Menu"} className="Li">
-              Menu
-            </Link>
-          </h3>
-          <h3 className="item">
-            <Link to={"/aroma/Recipe"} className="Li">
-              Recipes
-            </Link>
-          </h3>
-          <h3 className="item">
-            <Link to={"/aroma/about"} className="Li">
-              About
-            </Link>
-          </h3>
-        </div>
+              <h3 className="item">
+                <Link to={"/aroma/Menu"} className="Li">
+                  Menu
+                </Link>
+              </h3>
+              <h3 className="item">
+                <Link to={"/aroma/Recipe"} className="Li">
+                  Recipes
+                </Link>
+              </h3>
+              <h3 className="item">
+                <Link to={"/aroma/about"} className="Li">
+                  About
+                </Link>
+              </h3>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="parttwonavv">
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="icoons">
+                <g>
+                  <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+              </svg>
+              <input className="inpput" type="search" placeholder="Search" />
+            </div>
+          </>
+        )}
+
         <div className="partthreenav">
-          <Search />
+          <div className="searchh" onClick={toglesearch}>
+            <i className="ri-search-line "></i>
+          </div>
 
           {userNami ? (
             <>
@@ -214,7 +235,8 @@ const Navbar = ({ Cart, userNami }) => {
           <div className="partonenavside">
             <img src="./img/Logootw.png" alt="" />
           </div>
-          <i className="ri-search-line" id="searchside"></i>
+
+          <i className="ri-search-line" id="searchside" onClick={searchtog}></i>
         </div>
 
         <div className="parttwonavside"></div>
@@ -242,63 +264,65 @@ const Navbar = ({ Cart, userNami }) => {
           </h3>
         </div>
         <div className="bttstore">
-        {userNami ? (<>
-          <button className="getstart">
-            <div className="profileicoside">
-              <div className="sideprofileicon">
-                <i className="ri-user-3-fill proff"></i>
-              </div>
-              <div className="sideprofileiconn">{userNami}</div>
-            </div>
-          </button>
-          <Link to={"/aroma/"} className="Li">
-            <button className="getstart" onClick={handleLogout}>
-              <svg
-                className="logouticonn"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              >
-                <path d="M18.189 9a15 15 0 0 1 2.654 2.556c.105.13.157.287.157.444m-2.811 3a14.998 14.998 0 0 0 2.654-2.556A.704.704 0 0 0 21 12m0 0H8m5-7.472A6 6 0 0 0 3 9v6a6 6 0 0 0 10 4.472"></path>
-              </svg>
+          {userNami ? (
+            <>
+              <button className="getstart">
+                <div className="profileicoside">
+                  <div className="sideprofileicon">
+                    <i className="ri-user-3-fill proff"></i>
+                  </div>
+                  <div className="sideprofileiconn">{userNami}</div>
+                </div>
+              </button>
+              <Link to={"/aroma/"} className="Li">
+                <button className="getstart" onClick={handleLogout}>
+                  <svg
+                    className="logouticonn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  >
+                    <path d="M18.189 9a15 15 0 0 1 2.654 2.556c.105.13.157.287.157.444m-2.811 3a14.998 14.998 0 0 0 2.654-2.556A.704.704 0 0 0 21 12m0 0H8m5-7.472A6 6 0 0 0 3 9v6a6 6 0 0 0 10 4.472"></path>
+                  </svg>
 
-              <span>Log-out</span>
-            </button>
-          </Link>
-        </>):(<>
-          <button className="getstart">
-            <div className="profileicoside">
-              <div className="sideprofileicon">
-                <i className="ri-user-3-fill proff"></i>
-              </div>
-              <div className="sideprofileiconn">{userNami}</div>
-            </div>
-          </button>
-          <Link to={"/aroma/"} className="Li">
-            <button className="getstart" onClick={handleLoginpage}>
-              <svg
-                className="logouticonn"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              >
-                <path d="M18.189 9a15 15 0 0 1 2.654 2.556c.105.13.157.287.157.444m-2.811 3a14.998 14.998 0 0 0 2.654-2.556A.704.704 0 0 0 21 12m0 0H8m5-7.472A6 6 0 0 0 3 9v6a6 6 0 0 0 10 4.472"></path>
-              </svg>
+                  <span>Log-out</span>
+                </button>
+              </Link>
+            </>
+          ) : (
+            <>
+              <button className="getstart">
+                <div className="profileicoside">
+                  <div className="sideprofileicon">
+                    <i className="ri-user-3-fill proff"></i>
+                  </div>
+                  <div className="sideprofileiconn">{userNami}</div>
+                </div>
+              </button>
+              <Link to={"/aroma/"} className="Li">
+                <button className="getstart" onClick={handleLoginpage}>
+                  <svg
+                    className="logouticonn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  >
+                    <path d="M18.189 9a15 15 0 0 1 2.654 2.556c.105.13.157.287.157.444m-2.811 3a14.998 14.998 0 0 0 2.654-2.556A.704.704 0 0 0 21 12m0 0H8m5-7.472A6 6 0 0 0 3 9v6a6 6 0 0 0 10 4.472"></path>
+                  </svg>
 
-              <span>Log-in</span>
-            </button>
-          </Link>
-        </>)}
-
-          
+                  <span>Log-in</span>
+                </button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </>

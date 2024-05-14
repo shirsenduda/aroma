@@ -154,6 +154,18 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
           trigger: ".recomendedsection",
         },
       });
+      gsap.from(".recomendedsectionn", {
+        y: 10,
+        duration: 1, // seconds
+        delay: 0.5,
+        opacity: 0,
+        stagger: 0.3,
+        z: -300,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: ".recomendedsectionn",
+        },
+      });
       gsap.from(".Pageseven,.Testimonial,.Testimonialparttwo", {
         y: 10,
         duration: 1, // seconds
@@ -221,6 +233,38 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
       ProductDescription:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dol",
       ProductPrice: "24",
+    },
+  ];
+  const Offeringtw = [
+    {
+      key: 23,
+      Productimage:
+        "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ProductName: "Masala Maggi",
+      ProductML: "140gm/230 kcal",
+      ProductDescription:
+        "Masala Maggi and egg are blended with suace and vegetables ..",
+      ProductPrice: "10",
+    },
+    {
+      key: 24,
+      Productimage:
+        "https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ProductName: "Grilled Sandwich",
+      ProductML: "160gm/130 kcal",
+      ProductDescription:
+        "A delicious double layered hot sandwitch grilled with ginger ale. A pure veg for...",
+      ProductPrice: "18",
+    },
+    {
+      key: 25,
+      Productimage:
+        "https://images.unsplash.com/photo-1485704686097-ed47f7263ca4?q=80&w=1792&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ProductName: "Steak Dinner",
+      ProductML: "120gm/392 kcal",
+      ProductDescription:
+        "Lorem ipsum dolor sit amet, hniuinbgbi adipisicing elit. Recusandae dol",
+      ProductPrice: "34",
     },
   ];
   // Destructure
@@ -321,6 +365,28 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
             </div>
           </div>
         </div>
+        <div className="searchph">
+          <div className="containerr">
+            <input checked="" className="checkbox" type="checkbox" />
+            <div className="mainbox">
+              <div className="iconContainer">
+                <svg
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="search_icon"
+                >
+                  <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path>
+                </svg>
+              </div>
+              <input
+                className="search_input"
+                placeholder="search"
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
         <div className="recomendedsection">
           <div className="partonereco">
             <div className="barista">Latest Offers</div>
@@ -356,9 +422,33 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
             ))}
           </div>
         </div>
-        {/* <div className="recomendedsectionoffer">
-          <Offersection/>
-        </div> */}
+        <div className="recomendedsectionn">
+          <div className="partonerecoo">
+            {/* Latest Offerings Card */}
+            {Offeringtw.map((item, key) => (
+              <div className="cafrd" key={key}>
+                <div className="imgsttr">
+                  <img src={item.Productimage} alt="" />
+                </div>
+                <div className="cntent">
+                  <a href="#">
+                    <span className="ttle">{item.ProductName}</span>
+                    <br />
+                    <span className="ttcle">{item.ProductML}</span>
+                  </a>
+
+                  <p className="dsc">{item.ProductDescription}</p>
+                  <span className="rupe">$ {item.ProductPrice}</span>
+                  <a className="acion" onClick={() => Addtocarti(item)}>
+                    Add item
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <Page4 />
         <Pagetwo />
         <Pagesix />
