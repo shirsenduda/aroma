@@ -396,6 +396,8 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
                 <img src="./img/greyleafright.svg" alt="" />
               </div>
             </div>
+
+            
           </div>
           <div className="partonerecoo">
             {/* Latest Offerings Card */}
