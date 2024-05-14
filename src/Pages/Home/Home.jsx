@@ -396,13 +396,12 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
                 <img src="./img/greyleafright.svg" alt="" />
               </div>
             </div>
-
-            
           </div>
           <div className="partonerecoo">
             {/* Latest Offerings Card */}
             {Offering.map((item, key) => (
               <div className="cafrd" key={key}>
+                {/*  */}
                 <div className="imgsttr">
                   <img src={item.Productimage} alt="" />
                 </div>
