@@ -97,7 +97,7 @@ const SighUp = ({ cart, setProgress, userName }) => {
             displayName: UserSignUp.username,
           });
 
-          navigateLogin("/aroma/");
+          navigateLogin("/aroma/Login");
         })
         .catch((err) => toast.error(err.message));
     }
@@ -155,7 +155,7 @@ const SighUp = ({ cart, setProgress, userName }) => {
               <div className="bottom-text">
                 <p>
                   account?
-                  <Link to={"/aroma/"} className="a">
+                  <Link to={"/aroma/Login"} className="a">
                     Login
                   </Link>
                 </p>

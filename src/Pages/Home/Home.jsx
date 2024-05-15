@@ -14,7 +14,7 @@ import "./thirdpart.css";
 import Navbar from "../../component/Nav/Navbar.jsx";
 import "remixicon/fonts/remixicon.css";
 import LocomotiveScroll from "locomotive-scroll";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -267,13 +267,30 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
       ProductPrice: "34",
     },
   ];
-  // Destructure
-  // const [{ProductName,ProductML,ProductDescription,ProductPrice}]=Offering
+
+  // SearchItem
+  const [searchItem, setsearchItem] = useState("");
+  const [AllProducts, setAllProducts] = useState("");
+  const handleSearchItem = (e) => {
+    const query = e.target.value;
+    setsearchItem(query);
+    console.log(query);
+
+    const searchProduct = Offering.filter((searchFilterItem) => {
+      searchFilterItem.ProductName.includes(searchItem);
+    });
+    setAllProducts(searchProduct)
+  };
   return (
     <Layout>
       <div className="Pageone" ref={container}>
         <div className="secondpart">
-          <Navbar Cart={cart} userNami={userName} />
+          <Navbar
+            Cart={cart}
+            userNami={userName}
+            handleSearchItem={handleSearchItem}
+            searchItem={searchItem}
+          />
           <img src="./img/Group 21.png" alt="" />
           <div className="partone">
             <Coffeeicon />

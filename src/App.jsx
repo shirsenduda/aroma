@@ -28,6 +28,19 @@ const App = () => {
   const [discount, setdiscount] = useState(0);
   const [progress, setProgress] = useState(0);
   const [userName, setuserName] = useState("");
+
+   // UserName display
+   useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setuserName(user.displayName);
+      } else {
+        setuserName("");
+      }
+    });
+  }, []);
+  
+  // Add to cart function
   const Addtocart = (prod) => {
     const isProductExist = cartt.find((findItem) => findItem.key === prod.key);
     if (isProductExist) {
@@ -89,16 +102,7 @@ const App = () => {
     }
   };
 
-  // UserName display
-  useEffect(() => {
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        setuserName(user.displayName);
-      } else {
-        setuserName("");
-      }
-    });
-  }, []);
+ 
 
   return (
     <>
@@ -114,11 +118,12 @@ const App = () => {
               path="/aroma/"
               element={
                 
-                <Login
-                  userName={userName}
-                  setProgress={setProgress}
-                  cart={cartt.length}
-                />
+                <Home
+                setProgress={setProgress}
+                Addtocarti={Addtocart}
+                cart={cartt.length}
+                userName={userName}
+              />
               }
             />
             <Route
@@ -153,19 +158,18 @@ const App = () => {
               }
             />
             <Route
-              path="/aroma/Home"
+              path="/aroma/Login"
               element={
                 // <Login
                 //   userName={userName}
                 //   setProgress={setProgress}
                 //   cart={cartt.length}
                 // />
-                <Home
-                  setProgress={setProgress}
-                  Addtocarti={Addtocart}
-                  cart={cartt.length}
-                  userName={userName}
-                />
+                <Login
+                userName={userName}
+                setProgress={setProgress}
+                cart={cartt.length}
+              />
               }
             />
             <Route

@@ -87,11 +87,11 @@ const Login = ({ cart, setProgress, userName }) => {
     } else {
       signInWithEmailAndPassword(auth, UserSignUp.email, UserSignUp.password)
         .then((res) => {
-          navigateHome("/aroma/Home");
+          navigateHome("/aroma/");
           return toast.success("Login Successfull");
         })
         .then((res) => {
-          navigateHome("/aroma/Home");
+          navigateHome("/aroma/");
           return delay(3000).then(() => {
             toast.success("Please reloade the page");
           });
