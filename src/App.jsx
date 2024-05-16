@@ -16,6 +16,7 @@ import LoadingBar from "react-top-loading-bar";
 import toast, { Toaster } from "react-hot-toast";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./FirebaseAuth/FirebaseAuth";
+import { useReducer } from "react";
 
 // import Pageseven from "./component/allpages/Page7/Pageseven";
 //hello
@@ -28,18 +29,19 @@ const App = () => {
   const [discount, setdiscount] = useState(0);
   const [progress, setProgress] = useState(0);
   const [userName, setuserName] = useState("");
-
-   // UserName display
-   useEffect(() => {
+  const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
+  // UserName display
+  useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setuserName(user.displayName);
+        console.log(user.displayName);
       } else {
         setuserName("");
       }
     });
   }, []);
-  
+
   // Add to cart function
   const Addtocart = (prod) => {
     const isProductExist = cartt.find((findItem) => findItem.key === prod.key);
@@ -102,8 +104,6 @@ const App = () => {
     }
   };
 
- 
-
   return (
     <>
       <div className={Appcss.main}>
@@ -117,13 +117,12 @@ const App = () => {
             <Route
               path="/aroma/"
               element={
-                
                 <Home
-                setProgress={setProgress}
-                Addtocarti={Addtocart}
-                cart={cartt.length}
-                userName={userName}
-              />
+                  setProgress={setProgress}
+                  Addtocarti={Addtocart}
+                  cart={cartt.length}
+                  userName={userName}
+                />
               }
             />
             <Route
@@ -160,16 +159,11 @@ const App = () => {
             <Route
               path="/aroma/Login"
               element={
-                // <Login
-                //   userName={userName}
-                //   setProgress={setProgress}
-                //   cart={cartt.length}
-                // />
                 <Login
-                userName={userName}
-                setProgress={setProgress}
-                cart={cartt.length}
-              />
+                  userName={userName}
+                  setProgress={setProgress}
+                  cart={cartt.length}
+                />
               }
             />
             <Route

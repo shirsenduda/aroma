@@ -20,7 +20,7 @@ const Cart = ({
   setpromocode,
   invalidstate,
   setProgress,
-  userName
+  userName,
 }) => {
   useEffect(() => {
     setProgress(40);
@@ -29,6 +29,12 @@ const Cart = ({
     }, 1000);
     console.log("Mountt");
   }, []);
+
+  // payment toggle
+  const [togglepayment, settogglepayment] = useState(true);
+  const togglepaymentFunction = () => {
+    settogglepayment((i) => !i);
+  };
   return (
     <Layout>
       <Navbar userNami={userName} carticonnum={cartItem} Cart={cart} />
@@ -134,31 +140,73 @@ const Cart = ({
                   ) : (
                     <span className="invalidnon">Use DICOUNT10</span>
                   )}
-                  {/* {promocode==="DISCOUNT10" && (
-                    <span className="invalidnon">Use </span>
-                  )} */}
-                  {/* {promocode && promocode !== "DICOUNT10" ? (
-                  ) : (
-                    <span className="invalidnon">Use DISCOUNT10</span>
-                  )} */}
+
                   <button className="apply" onClick={applyPromocode}>
                     APPLY
                   </button>
                 </div>
-                {/* <div className="price">
-                  <div className="pricetotalleft">Delivery Charges</div>
-                  <div className="pricetotalright">₹40 Free</div>
-                </div> */}
 
                 <div className="pricetotal">
                   <div className="pricetotalleft">Total Amount</div>
                   <div className="pricetotalright">$ {getTotal()}</div>
                 </div>
-                <button className="cartbutt">PROCEED TO CHECKOUT</button>
+                <button className="cartbutt" onClick={togglepaymentFunction}>
+                  PROCEED TO CHECKOUT
+                </button>
               </div>
             </div>
           </div>
         </div>
+        {togglepayment === true ? (
+          <div className="Paymentnon"></div>
+        ) : (
+          <div className="Payment">
+            <section className="container">
+              <header>Delivery Inormation</header>
+              <form className="form" action="#">
+                <div className="input-box">
+                  <label>Full Name</label>
+                  <input
+                    autoComplete="off"
+                    required=""
+                    placeholder="Enter full name"
+                    type="text"
+                  />
+                </div>
+                <div className="column">
+                  <div className="input-box">
+                    <label>Phone Number</label>
+                    <input
+                      autoComplete="off"
+                      required=""
+                      placeholder="Enter phone number"
+                      type="text"
+                    />
+                  </div>
+                </div>
+
+                <div className="input-box address">
+                  <label>Address</label>
+                  <input
+                    autoComplete="off"
+                    required=""
+                    placeholder="Enter full address"
+                    type="text"
+                  />
+                  <div className="column">
+                    <input
+                      autoComplete="off"
+                      required=""
+                      placeholder="Enter pincode"
+                      type="number"
+                    />
+                  </div>
+                </div>
+                <button>Order Now</button>
+              </form>
+            </section>
+          </div>
+        )}
       </div>
     </Layout>
   );

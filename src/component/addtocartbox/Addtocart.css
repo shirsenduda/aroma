@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: space-evenly;
     white-space: nowrap;
+    scroll-snap-type: y mandatory;
     overflow: auto;
     padding-left: 5%;
     padding-bottom: 1%;
