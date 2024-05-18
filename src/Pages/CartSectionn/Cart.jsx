@@ -3,11 +3,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
-import Addtocart from "../../component/addtocartbox/Addtocart";
 import Layout from "../../component/Layout/Layout";
 import Navbar from "../../component/Nav/Navbar";
-import Muinus from "../../component/muinus/Muinuss";
-import Plus from "../../component/Plus/Plus";
+import toast, { Toaster } from "react-hot-toast";
+import CartEmpty from '../../component/CartEmpty/CartEmpty'
 const Cart = ({
   cartItem,
   handleInc,
@@ -35,15 +34,42 @@ const Cart = ({
   const togglepaymentFunction = () => {
     settogglepayment((i) => !i);
   };
+
+  // userorder State
+  const [UserOrder, setUserOrder] = useState({
+    Name: "",
+    PhoneNum: "",
+    Address: "",
+    pincode: "",
+  });
+  const FormHandler = (e) => {
+    setUserOrder({ ...UserOrder, [e.target.id]: e.target.value });
+    console.log(UserOrder);
+  };
+
+  const handleSumbit = (e) => {
+    e.preventDefault();
+    if (
+      !UserOrder.Name ||
+      !UserOrder.PhoneNum ||
+      !UserOrder.Address ||
+      !UserOrder.pincode
+    ) {
+      return toast.error("All Field are require");
+    } else {
+      toast.success("Order Successful");
+      onCloseModal();
+    }
+  };
+  const onCloseModal = () => {
+    togglepaymentFunction();
+    setUserOrder("");
+  };
   return (
     <Layout>
       <Navbar userNami={userName} carticonnum={cartItem} Cart={cart} />
-      <div className="cartmain">
+      {!cart?<CartEmpty/> :<div className="cartmain">
         <div className="cartit">
-          {/* <Addtocart cartmaindataa={cartItem}/> */}
-
-          {/* ghjuuyyu */}
-
           <div className="cartboxmain">
             <div className="cartboxmainleft">
               <div className="itemsheasder">
@@ -162,7 +188,12 @@ const Cart = ({
         ) : (
           <div className="Payment">
             <section className="container">
-              <header>Delivery Inormation</header>
+              <div className="Delivery">
+                <header>Delivery Information</header>
+                <div className="cros" onClick={togglepaymentFunction}>
+                  <i className="ri-close-fill"></i>
+                </div>
+              </div>
               <form className="form" action="#">
                 <div className="input-box">
                   <label>Full Name</label>
@@ -171,6 +202,9 @@ const Cart = ({
                     required=""
                     placeholder="Enter full name"
                     type="text"
+                    id="Name"
+                    onChange={FormHandler}
+                    value={UserOrder.Name}
                   />
                 </div>
                 <div className="column">
@@ -180,7 +214,10 @@ const Cart = ({
                       autoComplete="off"
                       required=""
                       placeholder="Enter phone number"
-                      type="text"
+                      type="number"
+                      id="PhoneNum"
+                      onChange={FormHandler}
+                      value={UserOrder.PhoneNum}
                     />
                   </div>
                 </div>
@@ -192,6 +229,9 @@ const Cart = ({
                     required=""
                     placeholder="Enter full address"
                     type="text"
+                    id="Address"
+                    onChange={FormHandler}
+                    value={UserOrder.Address}
                   />
                   <div className="column">
                     <input
@@ -199,15 +239,19 @@ const Cart = ({
                       required=""
                       placeholder="Enter pincode"
                       type="number"
+                      id="pincode"
+                      onChange={FormHandler}
+                      value={UserOrder.pincode}
                     />
                   </div>
                 </div>
-                <button>Order Now</button>
+                <button onClick={handleSumbit}>Order Now</button>
               </form>
             </section>
           </div>
         )}
-      </div>
+      </div> }
+      
     </Layout>
   );
 };
