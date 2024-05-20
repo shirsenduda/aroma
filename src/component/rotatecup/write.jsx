@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-import './write.css'
 const write = () => {
   
   return (

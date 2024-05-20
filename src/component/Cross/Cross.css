@@ -7,7 +7,7 @@
     display: none;
 }
 
-@media (max-width : 500px){
+@media (max-width : 800px){
     .Cross{
         width: 40px;
         height: 40px;

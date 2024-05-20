@@ -227,7 +227,234 @@
 
 
 
-
+@media (min-width: 1400px) {
+    .recomendedsection {
+        width: 100%;
+        height: 580px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #36100427;
+    
+    }
+    .recomendedsectionn {
+        width: 100%;
+        height: 390px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #36100427;
+    
+    }
+    .recomendedsectionoffer {
+        width: 100%;
+        height: 410px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #36100427;
+    
+    }
+    
+    .partonereco {
+        width: 100%;
+        height: 60px;
+        display: flex;
+    
+    }
+    
+    .partonerecoo {
+        width: 100%;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .barista {
+        font-size: 25px;
+        color: aliceblue;
+        font-family: "poppins", sans-serif;
+        font-weight: 600;
+        height: 100%;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .baristas {
+        font-size: 15px;
+        color: aliceblue;
+        font-family: "poppins", sans-serif;
+        font-weight: 550;
+        cursor: pointer;
+        height: 100%;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        position: relative;
+        margin-left: 37%;
+        padding-left: 15%;
+    }
+    
+    .baristasimg {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        left: 10%;
+    }
+    
+    .baristasimg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .cardsofff {
+        width: 320px;
+        height: 285px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgst {
+        width: 100%;
+        height: 150px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    
+    }
+    
+    .imgst img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    /* background-color: rgba(173, 113, 74, 0.35); */
+    
+    
+    .imgstw {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(80, 90, 90);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    
+    }
+    
+    
+    
+    
+    .cafrd {
+        max-width: 300px;
+        border-radius: 0.5rem;
+        background-color: rgba(173, 113, 74, 0.35);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid transparent;
+    }
+    
+    .cafrd a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .cntent {
+        padding: 1.1rem;
+    }
+    
+    .imgsttr {
+        object-fit: cover;
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+    
+    }
+    
+    .imgsttr img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .ttle {
+        color: #f8e4be;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+    }
+    
+    .dsc {
+        margin-top: 0.5rem;
+        color: #F8E4BE;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+    
+    .acion {
+        display: inline-flex;
+        margin-top: 1rem;
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        align-items: center;
+        gap: 0.25rem;
+        background-color: #997d6c5f;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .acion:active {
+        border: 0.5px solid #F8E4BE;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .action span {
+        transition: .3s ease;
+    }
+    
+    .action:hover span {
+        transform: translateX(4px);
+    }
+    
+    .ttcle {
+        color: #F8E4BE;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+    .rupe {
+        margin-right: 130px;
+        color: #F8E4BE;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+    }
+}
 
 
 
