@@ -279,7 +279,7 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
     const searchProduct = Offering.filter((searchFilterItem) => {
       searchFilterItem.ProductName.includes(searchItem);
     });
-    setAllProducts(searchProduct)
+    setAllProducts(searchProduct);
   };
   return (
     <Layout>

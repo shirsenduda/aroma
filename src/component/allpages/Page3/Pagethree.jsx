@@ -3,9 +3,9 @@
 "use Client";
 import React, { useState } from "react";
 import "./Page3.css";
-import Donut from "../../Donut/Donut";
-import Donuttwo from "../../Donuttwo/Donuttwo";
-import Donutthree from "../../Donutthree/Donutthree";
+import Donut from "../../Donut/Donut.jsx";
+import Donuttwo from "../../Donuttwo/Donuttwo.jsx";
+import Donutthree from "../../Donutthree/Donutthree.jsx";
 import Coffeeicon from "../../Coffeeicon/Coffeeicon.jsx";
 import Glow from '../../glow/Glow.jsx'
 const Pagethree = () => {

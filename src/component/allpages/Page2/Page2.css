@@ -41,9 +41,54 @@
     object-fit: cover;
 }
 
-/* border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
-*/
+
+@media (min-width: 700px) and (max-width: 1020px) {
+    .Swipertwo {
+        width: 100% !important;
+        height: 10vh !important;
+        background-color: #ad724ae9 !important;
+        white-space: nowrap !important;
+        display: flex !important;
+        flex-direction: row !important;
+        padding: 0px 10px !important;
+        margin-top: 10px !important;
+
+    }
+
+    .brand {
+        width: 360px !important;
+        height: 100px !important;
+        padding-top: 25px !important;
+        display: flex !important;
+        justify-content: center !important;
+        padding-left: 44px !important;
+
+    }
+
+    /* h */
+    .Black {
+        font-size: 6vw !important;
+        font-family: "Macondo Swash Caps", cursive !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        cursor: pointer !important;
+
+    }
+
+    .coffeeiconi {
+        width: 50px !important;
+        height: 56px !important;
+        position: absolute !important;
+        top: 19.5% !important;
+        left: 301px !important;
+    }
+
+    .coffeeiconi img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
 
 @media (min-width: 400px) and (max-width: 500px) {
     .Swipertwo {
@@ -93,12 +138,6 @@
     }
 }
 
-
-
-/* border-top-left-radius: 20px;
-    border-top-right-radius: 20px; 
-*/
-
 @media (min-width: 300px) and (max-width: 361px) {
     .Swipertwo {
         width: 100%;
@@ -144,6 +183,7 @@
         object-fit: cover;
     }
 }
+
 @media (min-width: 362px) and (max-width: 400px) {
     .Swipertwo {
         width: 100%;
