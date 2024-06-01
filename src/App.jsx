@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import Appcss from "./App.module.css";
 import Home from "./Pages/Home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, json } from "react-router-dom";
 import Cart from "./Pages/CartSectionn/Cart";
 import Breakfast from "./Pages/BreakfastSection/Breakfast";
 import Login from "./Pages/Login";
@@ -20,9 +20,13 @@ import { useReducer } from "react";
 
 // import Pageseven from "./component/allpages/Page7/Pageseven";
 //hello
+const storeData = () => {
+  const cart = localStorage.getItem("CartItem");
+  return cart ? JSON.parse(localStorage.getItem("CartItem")) : [];
+};
 const App = () => {
   const [ramu, setramu] = useState("hi");
-  const [cartt, setcart] = useState([]);
+  const [cartt, setcart] = useState(storeData());
   const [invalidstate, setinvalidstate] = useState("INVALID PROMOCODE");
   const [validstate, setvalidstate] = useState("VALID PROMOCODE");
   const [promocode, setpromocode] = useState("");
@@ -30,6 +34,11 @@ const App = () => {
   const [progress, setProgress] = useState(0);
   const [userName, setuserName] = useState("");
   const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
+  // Local Storage
+  useEffect(() => {
+    localStorage.setItem("CartItem", JSON.stringify(cartt));
+  }, [cartt]);
+
   // UserName display
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
