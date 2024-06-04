@@ -370,7 +370,7 @@ const Pageone = ({ Addtocarti, cart, setProgress, userName }) => {
               <div className="parttwosecondone">
                 <i className="ri-instagram-line"></i>
               </div>
-              <a href="https://github.com/shirsenduda/aroma" className="aa">
+              <a href="https://github.com/shirsenduda" className="aa">
                 <div className="parttwosecondtwo">
                   <i className="ri-github-fill"></i>
                 </div>
